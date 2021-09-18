@@ -1,0 +1,12 @@
+name: Discord Commits
+on: push
+jobs:
+  only_job:
+    steps:
+        -name: CommitJob
+            uses: Sniddl/discord-commits@v1.3
+            with:
+              webhook: ${{ secrets.DISCORD }}
+              message: "New ICE Version Released **{{ commit.title }}**"
+              embed: '{ "title": "{{ commit.title }}", "description": "{{ commit.description }}", "url": "{{ commit.url }}" }'
+              last-commit-only: true

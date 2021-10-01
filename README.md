@@ -220,11 +220,20 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 ### ──────────【 Hammer 】────────── ###
 
 #### 【 Power Charge Dash Addition 】 ####
--Power Charge when you are already in Power Charge State instead starts a dash which removes Power Charge State and instead sets the Charge Level to 3. This move is treated as part of a Charge and can combo into any Charge follow-up or continued into a Charge.
+- Power Charge when you are already in Power Charge State instead starts a dash which removes Power Charge State and instead sets the Charge Level to 3. This move is treated as part of a Charge and can combo into any Charge follow-up or continued into a Charge.
 	
 #### 【 Combo Continuation 】 ####
 The following combo continuation is intoduced and is inteded to be a possible continuation of the above listed addition of the Power Charge Dash.
 - Spinning Bludgeon into Spinning Strong Upswing can now combo into Big Bang IV
 
 #### 【 Important 】 ####
--The current implementation is not Multiplayer safe. There is a high risk of visual glitching and desynchronization. Game stability is also dubious in Multiplayer.
+- The current implementation is not Multiplayer safe. There is a high risk of visual glitching and desynchronization. Game stability is also dubious in Multiplayer.
+
+### ──────────【 Hunting Horn 】────────── ###
+
+The following changes are added in addition to the changes provided in Stable. See change notes on Stable for full details.
+
+#### 【 Draw Behavior 】 ####
+Drawing the weapon while running, will now no longer immediately execute a Forward Smash (aka Forward Slam). Instead, the hunter will now simply perform a draw animation to unsheath the weapon onto their shoulder. The hunter can choose to continue running, or input an attack during the draw animation. This allows hunters to perform any of their normal moves (to play a note they desire) or perform various recitals, greatly enhancing the flexibility of the weapon.
+
+> Known Issues: This change is intended as a proof-of-concept. The animations and transitions for the new draw animation will not look smooth for the time being. This will be addressed later once the final details regarding the gameplay of this new behavior are settled on.

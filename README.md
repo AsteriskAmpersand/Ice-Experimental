@@ -147,7 +147,10 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Focus:
   - Bonus gauge generation increased to 10/18/25% (up from 5/10/20%).
   - > This change helps gauge-based weapons reach certain meaningful breakpoints.
-- Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%. 
+- Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%.
+- Flinch Free:
+  - "Brace" decoration size decreased to Lv1 (from Lv3).
+  - Now negates airborne launches from other hunters at Lv1. (See "Airborne Launches" under "Quality of Life" section for more details)
 - Fortify:
   - Duration increased to 9.1 hours (up from 50 minutes). 
   - > This partially reverts a nerf from IB, as Capcom's nerf only encouraged players to restart their Guiding Lands session every 50 minutes, rather than actually addressing any real issues.
@@ -205,13 +208,21 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 - Chat channel no longer changes during certain actions (joining party/session/etc).
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
   - > This was done to help avoid situations where a hunter has to choose between interrupting their epic fight or forfeiting their rightfully earned loot. This wasn't a very interesting decision, in our opinion.
-- Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help quicken the time required to complete main story quests across all ranks.
-  - > Dev Comment: This is still a work-in-progress. Some cutscene audio might not skip correctly!
+- Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help shorten the time required to complete main story quests across all ranks.
+  - > This is still a work-in-progress feature. Some cutscene audio might not skip correctly due to not being defined by the game as cutscene audio.
+- Airborne Launches:
+  - Hunters can now protect themselves from being launched airborne by other hunters, using any of the available options that would protect against trips (including Flinch Free Lv1).
+  - Monster attacks are unaffected by this change.
+- Guarding on Shield Weapons:
+  - Guarding behavior changed to ignore attacks from other hunters.
+  - Hunters will still see a hit effect (sparks), but the guarding hunter no longer consumes stamina and does not get locked into any follow-up guard reaction animations.
+  - This change does not affect how hunters react to attacks they cannot block (from behind, unblockable attacks, etc).
+  - > In vanilla, shield weapons experienced extra downsides compared to other weapons when fighting in close proxity with other hunters. In particular, Lance hunters could have their Counter Thrusts triggered early by another hunter, resulting in getting hit by the Monster attack that they were preparing to counter. With this change, these unnecessary situations are removed from the game.
   
 ### ──────────【 Bug Fixes 】────────── ###
 
 - DPS Tick Fix: The engine components responsible for specifically handling ticking damage effects have been upgraded to mitigate the negative effects of frame rate on player damage output. In some cases, player damage could be reduced as much as 25% just for not playing at a stable 60fps. Some examples here: <https://bit.ly/MHWEffectsOfFPS>
-- Moonshots Fix: Aim behavior has been adjusted for Bow and Bowgun at short ranges to mitigate the occurrence of projectiles that incorrectly fly straight up (and seemly towards the moon/sky) and completely miss the intended target. This is sometimes refered to as "moonshots" by the community. An example can be seen here around the midpoint of the clip: <https://twitter.com/Irh_umbreon/status/1409001644411408391>
+- Moonshots Fix: Aim behavior has been adjusted for Bow and Bowgun at short ranges to mitigate the occurrence of projectiles that incorrectly fly straight up (seemingly towards the moon/sky) and completely miss the intended target. This is sometimes refered to as "moonshots" by the community. An example can be seen here around the midpoint of the clip: <https://twitter.com/Irh_umbreon/status/1409001644411408391>
 
 
 

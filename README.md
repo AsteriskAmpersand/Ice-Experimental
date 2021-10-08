@@ -136,26 +136,27 @@ Dracolites have been added to Guiding Lands drop tables, providing hunters the o
 - Full details can be found here: <https://www.nexusmods.com/monsterhunterworld/mods/2164>
 
 ### ──────────【 Skills 】────────── ###
-While a more comprehensive rework and rebalancing of skills is planned for ICE in the future, some skills have been tweaked in the mean time with the following goals in mind:
-1. Providing more interesting options that have a meaningful impact on gameplay.
-2. Providing more value at low levels of skills, to incentivize taking a wider variety of skills.
+While a more comprehensive rework and rebalancing of skills is planned for ICE in the future, some skills have been tweaked in the mean time with the an emphasis on increasing the variety of competitive options for hunters. This is mainly accomplished by:
+1. Changing skills to have a more meaningful impact on gameplay.
+2. Increasing the value of skills at lower levels.
+> Weapon-specific interactions with certain skills will be covered in that weapon's section instead of here.
 
 #### 【 General Changes 】 ####
 - Weakness Exploit:
-  - Softening requirement removed. 
-  - > This reverts a nerf from IB and is intended to help reduce reliance on Clutch Claw softening.
+  - Affinity bonus changed to 15/30/50%. Softening requirement removed. 
+  - > This reverts a nerf from IB and is intended to reduce reliance on Clutch Claw softening.
 - Focus:
   - Bonus gauge generation increased to 10/18/25% (up from 5/10/20%).
   - > This change helps gauge-based weapons reach certain meaningful breakpoints.
 - Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%.
 - Flinch Free:
   - "Brace" decoration size decreased to Lv1 (from Lv3).
-  - Now negates airborne launches from other hunters at Lv1. (See "Airborne Launches" under "Quality of Life" section for more details)
+  - Now affects airborne launches from other hunters. Lv2 will reduce the effect to a normal trip. Lv3 will negate the launches entirely. (See "Airborne Launches" under "Quality of Life" section for more details)
 - Fortify:
   - Duration increased to 9.1 hours (up from 50 minutes). 
-  - > This partially reverts a nerf from IB, as Capcom's nerf only encouraged players to restart their Guiding Lands session every 50 minutes, rather than actually addressing any real issues.
-- Quick Sheathe: 
-  - Speed increase changed to 15/30/40% (from 10/20/40%).
+  - > This partially reverts a nerf from IB, as Capcom's nerf only encouraged players to restart their Guiding Lands session every 50 minutes, rather than addressing any balance issues with Fortify.
+- Quick Sheathe:
+  - Speed bonus changed to 15/30/40% (from 10/20/40%).
 - Maximum Might:
   - Level 5 Affinity bonus increased to 50% (up from 40%).
   - Max Stamina time requirement decreased to 0 seconds (down from 5).
@@ -164,10 +165,12 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
   - Base Attack bonus increased to 10% (up from 5%).
   - > This reverts a nerf from IB.
 - Power Prolonger: 
-  - Effects specific to Switch Axe reduced from 1.3x/1.6x/2.0x to 1.1x/1.2x/1.4x.
+  - Dual Blades & Switch Axe bonus decreased to 1.15x/1.30x/1.40x (down from 1.3x/1.6x/2.0x).
+  - Long Sword, Charge Blade, & Insect Glaive bonus changed to 1.15x/1.30x/1.40x (was 1.1x/1.2x/1.4x).
 - Alatreon Divinity (Set Bonus):
   - Element Conversion rate for normal weapons increased to 8% (up from 5%).
   - Element Conversion rate for Bowguns increased to 8% (up from 2%).
+  > The above changes allow the Alatreon set to perform closer to other element oriented sets.
 
 ### ──────────【 Equipment 】────────── ###
 
@@ -211,13 +214,13 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 - Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help shorten the time required to complete main story quests across all ranks.
   - > This is still a work-in-progress feature. Some cutscene audio might not skip correctly due to not being defined by the game as cutscene audio.
 - Airborne Launches:
-  - Hunters can now protect themselves from being launched airborne by other hunters, using any of the available options that would protect against trips (including Flinch Free Lv1).
+  - Hunters can now protect themselves from being launched airborne by other hunters, using any of the available options that would protect against being knocked onto their butts. For example, Flinch Free Lv2 will reduce the launch to a trip, and Flinch Free Lv3 will negate the launch entirely.
   - Monster attacks are unaffected by this change.
 - Guarding on Shield Weapons:
   - Guarding behavior changed to ignore attacks from other hunters.
   - Hunters will still see a hit effect (sparks), but the guarding hunter no longer consumes stamina and does not get locked into any follow-up guard reaction animations.
-  - This change does not affect how hunters react to attacks they cannot block (from behind, unblockable attacks, etc).
-  - > In vanilla, shield weapons experienced extra downsides compared to other weapons when fighting in close proxity with other hunters. In particular, Lance hunters could have their Counter Thrusts triggered early by another hunter, resulting in getting hit by the Monster attack that they were preparing to counter. With this change, these unnecessary situations are removed from the game.
+  - This change does not affect how hunters react to attacks they cannot block (attacks from behind, unblockable attacks, etc).
+  - > In vanilla, shield weapons experienced extra downsides compared to other weapons when fighting in close proximity with other hunters. In particular, Lance hunters could have their Counter Thrusts triggered early by another hunter, resulting in getting hit by the Monster attack that they were preparing to counter. With this change, these potentially frustrating situations are removed from the game.
   
 ### ──────────【 Bug Fixes 】────────── ###
 

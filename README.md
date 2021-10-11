@@ -248,6 +248,17 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 ## Weapon Changes (Experimental Build) ##
 
+### ──────────【 Sword & Shield 】────────── ###
+
+#### 【 General Changes 】 ####
+- Backstep (aka Backhop):
+	- When performed after an unsheathed forward roll, hunters can now hold a desired direction and press Circle early to queue a directional Backstep.
+		- > Previously, early inputs would result in comboing into a backwards Backstep and late inputs would result in comboing into other attacks, leaving only a small 0.250s window that was difficult for hunters to consistently hit. With this change, early inputs are no longer an issue.
+	- When performed after starting to guard, the time available to input a Backstep safely has been increased to 0.417s (up from 0.283s).
+		- > This increases the window that hunters have by 50%, which should greatly increase the reliability of using Backstep right after a guard.
+- Slinger Aim vs Slinger Burst Aim Mode Toggle:
+	- The hunter's current selected mode will now still be retained upon sheathing (previously was resetting to Slinger Aim).
+
 ### ──────────【 Hammer 】────────── ###
 
 #### 【 Power Charge Dash Addition 】 ####

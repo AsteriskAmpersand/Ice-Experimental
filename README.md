@@ -251,6 +251,10 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 ### ──────────【 Sword & Shield 】────────── ###
 
 #### 【 General Changes 】 ####
+- Guard Slash:
+	- Now has a guardpoint starting from 0.10s from the start of the animation, lasting 0.30s.
+	- On small knockbacks with the guardpoint, can combo into Leaping Slash (Triangle) or Perfect Rush (Circle).
+	- > The above changes have been made to explore the possiblity of adding additional variety in gameplay and builds. In this current state, it is known that this GP->PR Combo is too strong in terms of damage output and will need sizable changes in future updates.
 - Backstep (aka Backhop):
 	- When performed after an unsheathed forward roll, hunters can now hold a desired direction and press Circle early to queue a directional Backstep.
 		- > Previously, early inputs would result in comboing into a backwards Backstep and late inputs would result in comboing into other attacks, leaving only a small 0.250s window that was difficult for hunters to consistently hit. With this change, early inputs are no longer an issue.

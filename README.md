@@ -250,18 +250,49 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 ### ──────────【 Sword & Shield 】────────── ###
 
-#### 【 General Changes 】 ####
+#### 【 New Parry Option 】 ####
+The following changes are intended to give hunters an additional defensive option that fits the theme of the weapon (parrying with a buckler shield) while increasing variety in gameplay. Hunters that master this new technique will be able to weave counter-attacks against weaker Monster attacks into their existing play.
 - Guard Slash:
 	- Now has a guardpoint starting from 0.10s from the start of the animation, lasting 0.30s.
-	- On small knockbacks with the guardpoint, can combo into Leaping Slash (Triangle) or Perfect Rush (Circle).
-	- > The above changes have been made to explore the possiblity of adding additional variety in gameplay and builds. In this current state, it is known that this GP->PR Combo is too strong in terms of damage output and will need sizable changes in future updates.
+	- When hit during the guardpoint, small knockbacks will result in immediately counter-attacking with a Shield Bash. This Shield Bash can combo into Leaping Slash (Triangle) or directly into Perfect Rush (Circle).
+	- > Hunters will need to recognize and react accordingly to which attacks they can and cannot "parry", as many Monster attacks will be too strong for a small shield. In addition, when comboing directly from Shield Bash into Perfect Rush, the Shield Bash will effectively replace the first hit in Perfect Rush I.
+
+#### 【 Quality of Life Changes 】 ####
 - Backstep (aka Backhop):
 	- When performed after an unsheathed forward roll, hunters can now hold a desired direction and press Circle early to queue a directional Backstep.
 		- > Previously, early inputs would result in comboing into a backwards Backstep and late inputs would result in comboing into other attacks, leaving only a small 0.250s window that was difficult for hunters to consistently hit. With this change, early inputs are no longer an issue.
 	- When performed after starting to guard, the time available to input a Backstep safely has been increased to 0.417s (up from 0.283s).
 		- > This increases the window that hunters have by 50%, which should greatly increase the reliability of using Backstep right after a guard.
 - Slinger Aim vs Slinger Burst Aim Mode Toggle:
-	- The hunter's current selected mode will now still be retained upon sheathing (previously was resetting to Slinger Aim).
+	- The hunter's current selected mode will now still be retained upon sheathing (previously was resetting to Slinger Aim Mode).
+
+#### 【 General Changes 】 ####
+Many of the following changes are targeted at one of the following goals:
+- Increasing the variety of combos and options available to hunters. Less used slashing attacks can now be better combined with existing high damage slashes (Lateral Slash + Return Stroke) to create longer and stronger combos without needing to utilize the weaker Spiral Slash as often. In addition, shield attacks can be comfortably used in place of slashes, allowing hunters to trade only a small amount of damage for added Stun buildup.
+- Reducing the dominance of Perfect Rush. The changes to Perfect Rush's damage help provide shorter combos (Slash combos, Shield combos, Falling Bash) a chance at competing in shorter windows of opportunities, while still maintaining Perfect Rush's advantage of dealing high damage for larger windows. In many situations, it can be better to use other options if the hunter does not have a large enough window to safely perform up to Perfect Rush II.
+
+- Chop:
+	- MV increased to 17 (up from 14).
+- Side Slash:
+	- MV increased to 14 (up from 13).
+- Rising Slash:
+	- MV increased to 15 (up from 14).
+- Short Shield Bash:
+	- MV increased to 15 (up from 6).
+- Shield Attack:
+	- MV increased to 20 (up from 8).
+- Shield Bash:
+	- MV increased to 20 (up from 16).
+- Hard Bash:
+	- MV increased to 36 (up from 31).
+- Perfect Rush I:
+	- MV decreased to 40+40+50 (down from 45+45+60).
+- Perfect Rush II:
+	- MV increased to 60 (up from 55).
+- Clutch Claw Weapon Attack:
+	- Final Hit:
+		- Partbreak Modifier increased to 2.35x (up from 1.00x).
+		- > Compensates for first three hits having a Partbreak Mod of 0.0x.
 
 ### ──────────【 Hammer 】────────── ###
 

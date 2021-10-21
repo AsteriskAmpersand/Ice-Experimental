@@ -97,7 +97,11 @@ Details can be found here: https://docs.google.com/spreadsheets/d/1nzN2zYD1VbeEu
 
 AT Velkhana's unique HZV mechanic has also been slightly modified to account for these changes:
 - Shot HZV Multipliers increased to 1.1/1.0/0.9 (up from 1.0/0.8/0.6)
-These values ensure that aura Lv1 and Lv2 still are WEX zones on an unbroken head, and that at Lv3 tenderized unbroken head and untenderized broken head are WEX zones. These values are below tenderized values in the vanilla tenderization formula and below melee multipliers values keeping in line with the assumed original developer intent.
+These multipliers ensure that the head hitzone still counts towards WEX zones for gunners under the following conditions:
+- Any time during aura Lv1
+- Any time during aura Lv2
+- Tenderized or broken head during aura Lv3
+These values follow the assumed original developer intent, as they are below tenderized values in the vanilla tenderization formula and below melee multipliers values.
 
 ### ──────────【 Player 】────────── ###
 - Attack cap increased to 3.0x (up from 2.0x). This reverts a nerf from IB.
@@ -335,6 +339,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
   - Element and Status Modifiers increased to 1.25x (up from 0.7x).
 - Power Guard:
 	- When held for 1.2s, increases Counter Thrust damage by 1.5x and grants the effects of Guard Up (previously only granted the effects of Guard Up).
+	- > This change is intended to give an alternative incentive for committing to a Power Guard, rather than solely for Guard Up. While this option is powerful, it is limited by OFG procs, stamina usage, increased chip damage, and high animation commitment. We understand that Power Guard should not creep too high as it is the safest guard option available, and are keeping an eye on how this new mechanic fares in all levels of Lance play before it moves to Stable.
 - Leaping Thrust:
   - MV increased to 11 (up from 8).
   - Element and Status Modifiers increased to 0.4x (up from 0.3x).

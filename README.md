@@ -325,10 +325,10 @@ Drawing the weapon while running, will now no longer immediately execute a Forwa
 Lance has a solid playstyle and was only lacking damage to compete with other weapons. As such, most attacks were simply increased in power to an appropriate level relative to other weapons. In addition, the Raw vs Element balance was adjusted to increase the variety of competitive weapon options.
 
 - Mid Thrusts:
-  - MV increased to 22/22/32 (up from 20/20/27).
+  - MV increased to 23/23/30 (up from 20/20/27).
   - Element and Status Modifiers increased to 0.8x/0.8x/0.9x (up from 0.7x/0.7x/0.7x).
 - High Thrusts:
-  - MV increased to 24/24/32 (up from 22/22/27).
+  - MV increased to 25/25/30 (up from 22/22/27).
   - Element and Status Modifiers increased to 0.8x/0.8x/0.9x (up from 0.7x/0.7x/0.7x).
 - Wide Sweeps:
   - MV increased to 32/32/40 (up from 20/20/20).
@@ -345,6 +345,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
   - Element and Status Modifiers increased to 0.4x (up from 0.3x).
 - Dash Attack:
 	- Startup time significantly reduced when used after Mid Thrust III, High Thrust III, or Wide Sweep III.
+	- No longer cancels when running into walls or terrain.
   - MV increased to 12 (up from 11).
   - Element and Status Modifiers increased to 0.5x (up from 0.2x).
 - Finishing Thrust:

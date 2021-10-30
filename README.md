@@ -58,25 +58,35 @@ If you were trying ICE before we switched to GitHub downloads, follow these one-
 # Save File System #
 ICE manages your character data in a separate save file named "SAVEDATA_ICE". The game normally uses the file named "SAVEDATA1000". These are both located in the standard save folder found at: `...\Steam\userdata\<steamId>\582010\remote\`
 
-Because ICE incorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way.
-
-If enabled, ICE will automatically use the "SAVEDATA_ICE" save file. Otherwise, your game will continue to use the "SAVEDATA1000" save file as normal.
-Should you want to copy your progress over to ICE:
-1. Remove "SAVEDATA_ICE" if it exists (or throw it another folder for safe keeping).
-2. Make a new copy of "SAVEDATA1000".
-3. Rename that copy to "SAVEDATA_ICE".
+Because ICE incorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way. This system also allows hunters to quickly switch between ICE and vanilla freely without having to swap out save files. If enabled, ICE will automatically use the "SAVEDATA_ICE" save file. Otherwise, your game will continue to use the "SAVEDATA1000" save file as normal.
 
 As always, it is recommended to make backups of your saves. It only takes one mistake to lose all your save data.
 
 ## Creating Your ICE Save File ##
 If you boot up the game with ICE enabled for the first time and it says no save data detected, but you want to use your existing character data, then just follow these steps:
 1. Hit yes to create a new ICE save but DON'T select a language.
-2. If you want to start a new save file, then continue with the setup process and skip the rest of the steps. Otherwise...
+2. If you want to start a new save file, then continue with the setup process in-game and skip the rest of the steps. Otherwise, continue with step 3.
 3. Close the game after the game creates the save file but before selecting a language.
 4. Navigate to your save folder at `...\Steam\userdata\<steamid>\582010\remote\`.
 5. Delete the "SAVEDATA_ICE" file that's in that folder.
 6. Make a copy of your "SAVEDATA1000" file and rename that copy to "SAVEDATA_ICE"
 7. Start the game again.
+
+## Updating Your ICE Save File ##
+If you've continued to play on your vanilla save and want to overwrite your ICE save progress, then follow these steps:
+1. Remove "SAVEDATA_ICE" if it exists (or throw it into another folder for safe keeping).
+2. Make a new copy of "SAVEDATA1000".
+3. Rename that copy to "SAVEDATA_ICE".
+
+- - - -
+
+# Known Issues #
+
+## Language Support ##
+ICE currently only officially supports English language for text. You can use any voice language you prefer though.
+
+## Incorrect Text / Descriptions ##
+Much of the text found in ICE has not yet been updated to reflect changes made to the game. Our primary focus is on testing gameplay changes first, in an effort to avoid losing time and effort to keep descriptions up-to-date as we try different changes. Once we're further in development, we'll put more effort into covering changes we've made, and also updating descriptions from the game that are inaccurate or ambigious.
 
 - - - -
 
@@ -194,7 +204,7 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 > Dev Comment: We understand these changes result in a decrease in the endgame power of hunters. While these endgame sets served as a nice final reward from Capcom for "finishing" the game, we don't think the power creep introduced by these sets are healthy in the context of ICE where we will be continually adding to the game. If/when we get around to incorporating additional endgame content, we may come back to revisit these changes when it's appropriate to have gear at these power levels.
 
-- Fatalis and Velkhana Gamma Sets have been reduced in skills and deco slots.
+- Fatalis and Velkhana Gamma Sets have been reduced in skills and deco slots. Fatalis Set no longer has access to Transcendence.
 - These sets should still be competitive compared to options before their introduction.
 - Changes to armors will be tracked separately on the Armor Spreadsheet.
 
@@ -310,14 +320,6 @@ The following combo continuation is intoduced and is inteded to be a possible co
 #### 【 Important 】 ####
 - The current implementation is not Multiplayer safe. There is a high risk of visual glitching and desynchronization. Game stability is also dubious in Multiplayer.
 
-### ──────────【 Hunting Horn 】────────── ###
-
-The following changes are added in addition to the changes provided in Stable. See change notes on Stable for full details.
-
-#### 【 Draw Behavior 】 ####
-Drawing the weapon while running, will now no longer immediately execute a Forward Smash (aka Forward Slam). Instead, the hunter will now simply perform a draw animation to unsheath the weapon onto their shoulder. The hunter can choose to continue running, or input an attack during the draw animation. This allows hunters to perform any of their normal moves (to play a note they desire) or perform various recitals, greatly enhancing the flexibility of the weapon.
-
-> Known Issues: This change is intended as a proof-of-concept. The animations and transitions for the new draw animation will not look smooth for the time being. This will be addressed later once the final details regarding the gameplay of this new behavior are settled on.
 
 ### ──────────【 Lance 】────────── ###
 

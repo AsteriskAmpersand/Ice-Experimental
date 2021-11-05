@@ -78,6 +78,9 @@ If you've continued to play on your vanilla save and want to overwrite your ICE 
 2. Make a new copy of "SAVEDATA1000".
 3. Rename that copy to "SAVEDATA_ICE".
 
+## Photo Data ##
+ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
+
 - - - -
 
 # Known Issues #
@@ -87,6 +90,12 @@ ICE currently only officially supports English language for text. You can use an
 
 ## Incorrect Text / Descriptions ##
 Much of the text found in ICE has not yet been updated to reflect changes made to the game. Our primary focus is on testing gameplay changes first, in an effort to avoid losing time and effort to keep descriptions up-to-date as we try different changes. Once we're further in development, we'll put more effort into covering changes we've made, and also updating descriptions from the game that are inaccurate or ambigious.
+
+## Photo Data ##
+ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
+
+## Quest: ★1 Learning the Clutch ##
+This quest cannot currently be completed as intended due to the fact that Clagger is removed in ICE. A temporary fix has been put in place to allow the quest to be completed by killing the Great Jagras. In the future, we'll address this issue properly by updating the quest to account for Clagger removal, or replace the quest entirely.
 
 - - - -
 
@@ -385,4 +394,189 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
   - Second Hit: 
     - Partbreak Modifier increased to 1.75x (up from 1.0x).
     - > Compensates for the first hit having a Partbreak Mod of 0.0x.
-		
+
+
+### ──────────【 Bowgun Ammos 】────────── ###
+
+The following changes are independently managed by Phemeto. They are highly experimental and subject to change.
+
+- General Ammo Changes:
+  - Normal, Pierce, Spread, Cluster, and Sticky Ammo types changed to only have Lv2 and Lv3 versions. 
+  - Paralysis, Sleep, Blast, and Poison Ammo changed to only have Lv2 versions.
+  - Carry limit for Elemental Ammos decreased to 5. Crafting recipes removed.
+  - Carry limit for Slicing Ammo 1/2 changed to 30/18. Crafting recipe for Lv2 removed.
+  - Carry limit for TriBlast Ammo changed to 10. Crafting recipes removed.
+  - Carry limit for Dazzling Ammo changed to 25. Crafting recipes removed.
+  - Carry limit for Dragonfell Berry increased to 35.
+  - Carry limit for Bomberries increased to 15.
+  - Carry limit for Blastnuts increased to 60.
+-Spareshot and True Spareshot:
+    - Activations only affect total ammo for Bowguns (was affecting ammo in magazine).
+    - Spareshot chance increased to 30% (up from 20%). Increases total ammo to ~1.43x on average.
+    - True Spareshot chance increased to 40% (up from 30%). Increases total ammo to ~1.67x on average.
+- Normal Ammo:
+  - MV changed to 25/40 (was 10/20/34).
+  - Element Modifier changed to 5x/7x (was 0x/0x).
+  - Projectile Speed changed to 100/100 meters per second (was 45/100).
+  - Critical Range End increased to 17m (up from 15m).
+  - Long Barrel Mod's Critical Range Start decreased to 0m (down from 2m).
+  - Long Barrel Mod's Critical Range End increased to 20m (up from 15m).
+- Pierce Ammo:
+  - MV changed to 11/30 (was 7/7/9).
+  - Element Modifier changed to 2.0x/3.0x (was 0x/0x).
+  - Pierce Lv2:
+    - Projectile Speed changed to 50 meters per second (was 25).
+  - Pierce Lv3:
+    - Projectile speed and drop changed to match Dragon Ammo.
+  - Critical Range End increased to 30m (up from 25m).
+  - Power Barrel Mod's Critical Range End decreased to 20m (down from 23m).
+  - Power Barrel Mod's Projectile Speed modifier changed to -20m/s (from -5m/s).
+  - Long Barrel Mod's Critical Range Start decreased to 0m (down from 10m).
+  - Long Barrel Mod's Critical Range End increased to 50m (up from 27m).
+  - Light Bowgun: Damage reduced to 0% after the 5th hit (down from 20% after the 9th hit).
+  - Heavy Bowgun: Damage reduced to 0% after the 6th hit (down from 20% after the 9th hit).
+- Spread Ammo:
+  - MV changed to 10/10 (was 6/7/8).
+  - Element Modifier changed to 2.2x/2.6x (was 0.0x/0.0x).
+  - Spread patterns changed to be grouped around central point (was horizontal line). Reference: https://docs.google.com/document/d/1GMfr1ZWDJyCwPEixZtKtVdpH3vd9OhUMzs08DZ9sZfc/edit
+  - Projectile Speed increased to 90/95/100 meters per second (up from 80/80/80).
+  - Power Barrel Mod's Projectile Speed modifier changed to -10m/s (from -15m/s).
+  - Long Barrel Mod's Projectile Speed modifier changed to +10/+15/+20 meters per second (from +15m/s).
+  - Maximum Range increased to 20m/20m/22m (up from 11m/11m/11m).
+  - Long Barrel Mod's Maximum Range increased to 24m/24m/26m (up from 13m/13m/13m).
+  - Critical Range End increased to 10m (up from 7m).
+  - Power Barrel Mod's Critical Range End increased to 9m (up from 7m).
+  - Long Barrel Mod's Critical Range End increased to 14m (up from 7m).
+- Sticky Ammo:
+  - Damage Type changed to Blunt (was "HZV independent").
+  - MV changed to 29/40 (was 12/17/24).
+  - Fire Damage removed (was 3/5/5).
+  - Element Modifier changed to 5x/7x (was 0x/0x/0x).
+  - Stun buildup changed to 70/100 (was 30/50/100).
+- Cluster Ammo:
+  - MV changed to 17/20 (was 17/20/26).
+  - Fire damage removed (was 5/8/10).
+  - Element Modifier changed to 4x/5x (was 0x/0x/0x).
+  - Partbreak Modifier increased to 0.5x (up from 0.2x).
+  - Bomb count changed to 5/7 (was 3/4/5).
+- Slicing Ammo (was previously Recover Ammo):
+  - Replaced with Slicing Ammo 1 and Slicing Ammo 2.
+  - Hit count changed to 3/5.
+- Poison Ammo:
+  - MV changed to 20 (was 1/1). 
+  - Poison Buildup changed to 150 (was 40/80).
+- Paralysis Ammo:
+  - MV changed to 20 (was 1/1). 
+  - Paralysis Buildup changed to 100 (was 40/80).
+- Sleep Ammo:
+  - MV changed to 20 (was 1/1). 
+  - Sleep Buildup changed to 100 (was 40/80).
+- Blast Ammo (was previously Exhaust Ammo):
+  - MV changed to 20 (was 1/1). 
+  - Blast Buildup changed to 100 (was 0/0).
+  - Stun buildup removed (was 20/50).
+  - Exhaust buildup removed (was 50/100).
+  - > Will be renamed in-game on a later update.
+- Elemental Ammo:
+  - Projectile speed and drop changed to match Dragon Ammo.
+  - MV increased to 18 (up from 8).
+  - Element Damage increased to 40 (from 22).
+  - Element Modifier increased to 1.75x (up from 1.0x).
+- Triblast Ammo (was previously Slicing Ammo):
+  - MV of 15.
+  - Damage type of "HZV independent".
+  - Hits 3 times.
+  - Element Modifier of 2.6x.
+  - Partbreaker modifier of 1.2x.
+  - Stun buildup of 50.
+  - Affected by Artillery skill.
+- Wyvern Ammo:
+  - MV changed to 100+10 (up from 70+19).
+  - Fire Damage removed (down from 40+20).
+  - Element Modifier increased to 30x+3x (up from 0x+0x).
+- Dazzling Ammo (was previously Armor Ammo):
+  - MV of 65.
+  - Projectile Speed of 150m/s.
+  - Critical Range Start of 0m.
+  - Critical Range End of 100m.
+  - Recoil type changed to Recoil+1 or Auto-Reload on weapons with this ammo type. 
+  - Clip size increased on some weapons.
+
+### ──────────【 Heavy Bowgun 】────────── ###
+
+The following changes are independently managed by Phemeto. They are highly experimental and subject to change.
+
+- Heavy Bowgun weapons and ammo tables have been reworked. Some weapons have been given innate element damage. Details can be found here: https://docs.google.com/spreadsheets/d/1L555ZahI2IqgYvjLhjSilNst86X8UPObSu2rtklPXxc/edit?usp=sharing
+- Attack Awakening III/IV/V/VI increased to 7/9/12/18 (up from 6/8/10/15).
+- Rapid Fire (Recoil Type):
+  - Various HBGs now support Rapid Fire for specific ammos.
+  - Secondary shot damage increased to 100% (up from 50%).
+  - Secondary shot delay changed to 0.15s/0.22s/0.10s/0.15s (from 0.15s/0.22s/0.18s/0.30s).
+  - Secondary shot counts changed to 2/2/1/1 (from 2/2/2/1).
+- Close Range Up Mod: 
+  - Maximum active range increased to 8m (up from 6m).
+  - Raw Damage multiplier changed to 1.1/1.2/1.3/1.4 (from 1.2/1.3/1.35/1.4).
+- Long Range Up Mod:
+  - Minimum active range decreased to 10m (down from 16m).
+  - Raw Damage multiplier changed to 1.1/1.2/1.3/1.45 (from 1.2/1.35/1.4/1.45).
+- Special Scope Mod:
+  - Removed scoped FOV and blur effects.
+  - Normal Ammo damage multiplier decreased to 1.2x (down from 1.3x) and Distance Ratio increased to 0.6 (up from 0.3).
+  - Pierce Ammo damage multiplier decreased to 1.2x (down from 1.3x) and Distance Ratio increased to 0.4 (up from 0.3).
+  - Spread Ammo damage multiplier removed (down from 1.3x).
+- Shield Mod:
+  - Guard Angle increased to 140 degrees (up from 120 degrees). 
+  - Increased Guard Strength now caps at Shield mods x2 (equivalent to CB & GS Guard Strength at 14/39/40+).
+  - > Shield mods x3 now grants no bonus over Shield mods x2. Shield mods x4 still grants reduced chip damage.
+- Clutch Claw Weapon Attack:
+  - Backward impulse decreased to 300 (down from 800).
+  - > With this change, player will be dropped closer to the monster.
+- Wyvernheart:
+  - Delay between shots decreased to 0.15s (down from 0.2s), resulting in a 33.33% increased fire rate. 
+  - Ammo Regen per second increased to 0.56 (up from 0.27).
+- Wyvernsnipe:
+  - Main projectile:
+    - MV increased to 30/50/75/110 (up from 20/38/49/81).
+  - Explosions:
+    - Explosion limit increased to 9 (up from 7).
+    - Explosion configuration changed to 3L+3M+3S (from 2S+2M+3L).
+    - This change results in more consistent damage across every size of monster.
+- Wyvernsnipe Type 2:
+  - Distance Match:
+    - MV increased 165 (up from 98).
+    - Stun buildup increased to 100 (up from 15).
+  - HZV Match:
+    - MV increased to 235 (up from 147).
+    - Stun buildup increased to 200 (up from 40).
+  - Perfect Match:
+    - MV increased to 350 (up from 243).
+    - Stun buildup increased to 300 (up from 60).
+
+
+### ──────────【 Light Bowgun 】────────── ###
+
+The following changes are independently managed by Phemeto. They are highly experimental and subject to change.
+
+- Light Bowgun weapons and ammo tables have been reworked. Some weapons have been given innate element damage. Details can be found here: https://docs.google.com/spreadsheets/d/1L555ZahI2IqgYvjLhjSilNst86X8UPObSu2rtklPXxc/edit?usp=sharing
+- Light Bowgun mod slot limit increased to 5 (up from 4).
+- Close Range Up Mod: Maximum active range increased to 8m (up from 6m).
+- Long Range Up Mod:
+  - Minimum active range decreased to 10m (down from 16m).
+  - Raw Damage multiplier changed to 1.1/1.2/1.3/1.45 (from 1.2/1.35/1.4/1.45).
+- Evade Reload Mod:
+  - Ammo reloaded per mod increased to 3 (up from 1).
+  - Now changes "Neutral unsheathed roll" to "evade reload slide", if equipped.
+- Rapid Fire (Recoil Type):
+  - Secondary shot damage increased to 70% (up from 50%).
+  - Secondary shot delay changed to 0.3s/0.3s/0.1s/0.1s (from 0.15s/0.22s/0.18s/0.30s).
+  - Secondary shot counts changed to 2/2/1/1 (from 2/2/2/1).
+- Clutch Claw Weapon Attack:
+  - Backward impulse decreased to 250 (down from 700).
+  - > With this change, player will be dropped closer to the monster.
+- Wyvernblast:
+  - Charge consumption decreased to 1/2/3 (down from 1/2/4).
+- Wyvernblast Type 2:
+  - MV increased to 60/80/100/150 (up from 26/49/73/110). 
+  - Fire Damage decreased to 0/0/0/0 (down from 3/5/6/7).
+
+

@@ -275,10 +275,11 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 #### 【 New Parry Option 】 ####
 The following changes are intended to give hunters an additional defensive option that fits the theme of the weapon (parrying with a buckler shield) while increasing variety in gameplay. Hunters that master this new technique will be able to weave counter-attacks against weaker Monster attacks into their existing play.
-- Guard Slash:
+- Parry (previously Guard Slash):
 	- Now has a guardpoint starting from 0.10s from the start of the animation, lasting 0.30s.
 	- When hit during the guardpoint, small knockbacks will result in immediately counter-attacking with a Shield Bash. This Shield Bash can combo into Leaping Slash (Triangle) or directly into Perfect Rush (Circle).
-	- > Hunters will need to recognize and react accordingly to which attacks they can and cannot "parry", as many Monster attacks will be too strong for a small shield. In addition, when comboing directly from Shield Bash into Perfect Rush, the Shield Bash will effectively replace the first hit in Perfect Rush I.
+	- Most attacks that previously could combo into Backstep, now can also combo into Parry.
+  - > Hunters will need to recognize and react accordingly to which attacks they can and cannot parry, as many Monster attacks will be too strong for a small shield. In addition, when comboing directly from Shield Bash into Perfect Rush, the Shield Bash will effectively replace the first hit in Perfect Rush I. Skilling for Guard is advised, to maximize the number of attacks that can be parried.
 
 #### 【 Quality of Life Changes 】 ####
 - Backstep (aka Backhop):

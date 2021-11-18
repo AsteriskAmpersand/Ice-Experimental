@@ -6,6 +6,18 @@ Iceborne Community Edition is a holistic rework of MHW: Iceborne. We attempt to 
 
 - - - -
 
+# Table of Contents #
+
+- [Installation Guide](#installation-guide)
+- [Save File System](#save-file-system)
+- [Known Issues](#known-issues)
+- [Change Log](#change-log)
+  - [General Changes](#general-changes)
+  - [Weapon Changes (Stable Build)](#weapon-changes-stable-build)
+  - [Weapon Changes (Experimental Build)](#weapon-changes-experimental-build)
+
+- - - -
+
 # Installation Guide #
 
 ## First Time Installation ##
@@ -95,7 +107,7 @@ Much of the text found in ICE has not yet been updated to reflect changes made t
 ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
 
 ## Quest: ★1 Learning the Clutch ##
-This quest cannot currently be completed as intended due to the fact that Clagger is removed in ICE. A temporary fix has been put in place to allow the quest to be completed by killing the Great Jagras. In the future, we'll address this issue properly by updating the quest to account for Clagger removal, or replace the quest entirely.
+This quest cannot currently be completed as intended due to the fact that Clagger is removed in ICE. A temporary fix has been put in place to allow the quest to be completed by killing the Pukei Pukei. In the future, we'll address this issue properly by updating the quest to account for Clagger removal, or replace/remake the quest entirely.
 
 - - - -
 
@@ -106,12 +118,12 @@ This quest cannot currently be completed as intended due to the fact that Clagge
 ### ──────────【 Multiplayer / Matchmaking 】────────── ###
 While ICE is installed and enabled, hunters will only be matched with other ICE hunters. This is true when using matchmaking to find sessions or when creating/joining SOS. This is done for compatibility reasons and also out of courtesy to non-ICE hunters, so that non-ICE lobbies are not negatively impacted by any changes or differences in gameplay. Unlike other gameplay altering mods, hunters can freely play online with ICE.
 
-### ──────────【 Monster 】────────── ###
+### ──────────【 Monster Hitzones / Softening 】────────── ###
 The dominance of the Clutch Claw has been drastically reduced to bring back the original combat pacing from base World. The goal is for softening to be a competitive option, but not a requirement.
 - Softening effect on monster HZV has been reduced to `HZV+5` (down from `0.75*HZV + 25`).
 - Monster "Clagger" behavior has been removed. Instead monsters will flinch, trip, and topple like they used to, before Iceborne.
 
-Since Capcom reduced Monster hitzone values to accommodate the powerful effects of softening, Monster  hitzone values have been rebalanced in ICE to compensate for the Clutch Claw nerfs above. 
+Since Capcom reduced Monster hitzone values (HZV) to accommodate the powerful effects of softening, Monster hitzone values have been rebalanced in ICE to compensate for the Clutch Claw nerfs above. 
 Details can be found here: https://docs.google.com/spreadsheets/d/1nzN2zYD1VbeEuKGlrYPRDZPHjfyy0y-SawwSEaTZ8OQ/edit?usp=sharing
 
 AT Velkhana's unique HZV mechanic has also been slightly modified to account for these changes:
@@ -190,6 +202,12 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Power Prolonger: 
   - Dual Blades & Switch Axe bonus decreased to 1.15x/1.30x/1.40x (down from 1.3x/1.6x/2.0x).
   - Long Sword, Charge Blade, & Insect Glaive bonus changed to 1.15x/1.30x/1.40x (was 1.1x/1.2x/1.4x).
+- Critical Element / True Critical Element:
+  - Great Sword multipliers decreased to 1.35x/1.55x (down from 1.5x/1.7x).
+  - Hunting Horn multipliers decreased to 1.35x/1.55x (down from 1.5x/1.7x).
+- Critical Status / True Critical Status:
+  - Great Sword multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
+  - Hunting Horn multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
 - Alatreon Divinity (Set Bonus):
   - Element Conversion rate for normal weapons increased to 8% (up from 5%).
   - Element Conversion rate for Bowguns increased to 8% (up from 2%).
@@ -266,6 +284,18 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 - DPS Tick Fix: The engine components responsible for specifically handling ticking damage effects have been upgraded to mitigate the negative effects of frame rate on player damage output. In some cases, player damage could be reduced as much as 25% just for not playing at a stable 60fps. Some examples here: <https://bit.ly/MHWEffectsOfFPS>
 - Moonshots Fix: Aim behavior has been adjusted for Bow and Bowgun at short ranges to mitigate the occurrence of projectiles that incorrectly fly straight up (seemingly towards the moon/sky) and completely miss the intended target. This is sometimes refered to as "moonshots" by the community. An example can be seen here around the midpoint of the clip: <https://twitter.com/Irh_umbreon/status/1409001644411408391>
+- Weapon-specific bug fixes will be covered in each weapon's section instead of here.
+
+### ──────────【 Monster Changes 】────────── ###
+
+#### ──────────【 Monster Hitzones / Softening 】────────── ####
+Details for this section are covered under General Changes near the top of this Change Log.
+
+#### ──────────【 Alatreon 】────────── ####
+Due to element damage output increasing significantly on many weapon types, Alatreon's weapon-specific element topple multipliers have been adjusted. A lower multiplier means a weapon's element damage will count for less and the hunter will need to deal more total element damage to reach each topple.
+- Great Sword modifier decreased to 0.8x (down from 1.1x).
+- Hunting Horn modifier decreased to 0.8x (down from 1.0x).
+- Gunlance modifier decreased to 1.0x (down from 1.1x).
 
 
 
@@ -326,9 +356,9 @@ Many of the following changes are targeted at one of the following goals:
 #### 【 Combo Continuation 】 ####
 The following combo continuation is intoduced and is inteded to be a possible continuation of the above listed addition of the Power Charge Dash.
 - Spinning Bludgeon into Spinning Strong Upswing can now combo into Big Bang IV
+- The Dash has 30 seconds of hyper-armor (Frame 10 to Frame 40)
 
-#### 【 Important 】 ####
-- The current implementation is not Multiplayer safe. There is a high risk of visual glitching and desynchronization. Game stability is also dubious in Multiplayer.
+### ──────────【 Hammer 】────────── ###
 
-
-		
+#### 【 Melee Attack Hyper Armor 】 ####
+Bowgun melee attack has been given 50 frames of hyperarmor. They begin on frame 0.

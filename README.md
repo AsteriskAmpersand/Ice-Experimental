@@ -357,8 +357,3 @@ Many of the following changes are targeted at one of the following goals:
 The following combo continuation is intoduced and is inteded to be a possible continuation of the above listed addition of the Power Charge Dash.
 - Spinning Bludgeon into Spinning Strong Upswing can now combo into Big Bang IV
 - The Dash has 30 seconds of Hyperarmor (Frame 10 to Frame 40)
-
-### ──────────【 Heavy Bowgun 】────────── ###
-
-#### 【 Melee Attack Hyper Armor 】 ####
-Bowgun melee attack has been given 20 frames of Hyperarmor. (Frame 13 to Frame 33).

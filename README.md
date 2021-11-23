@@ -170,6 +170,17 @@ Dracolites have been added to Guiding Lands drop tables, providing hunters the o
 - Guiding Lands Material mining and gathering rates have been strongly boosted.
 - Full details can be found here: <https://www.nexusmods.com/monsterhunterworld/mods/2164>
 
+#### 【 High Rank Augments 】 ####
+Smithy costs for the following have been adjusted to better balance material usage in High Rank, and allow Rarity 6 weapons to act as a stronger progression step before Rarity 7 or 8 augmented weapons.
+- Augments for Rarity 6 weapons changed to use 1x Streamstone instead of 1x Warrior's Streamstone.
+- Augments for Rarity 7 weapons changed to use 1x Warrior's Streamstone (down from 2x Warrior's Streamstones).
+
+The following new melding recipes have been added at the Elder Melder, to give hunters more control over their experience around farming High Rank augments:
+- All 7 types of Warrior's Streamstones can be melded from 2 Warrior's Streamstones of any type.
+- All 7 types of Hero's Streamstones can be melded from 2 Hero's Streamstones of any type.
+- 2 Warrior's Streamstones can be melded from a single Hero's Streamstone of the same type.
+- Hero's Streamstones can be melded from 4 Warrior's Streamstones of the same type.
+
 ### ──────────【 Skills 】────────── ###
 While a more comprehensive rework and rebalancing of skills is planned for ICE in the future, some skills have been tweaked in the mean time with the an emphasis on increasing the variety of competitive options for hunters. This is mainly accomplished by:
 1. Changing skills to have a more meaningful impact on gameplay.
@@ -269,6 +280,9 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
     - Research Point costs for Mega Fertilizer, Choice Mushroom Substrate, Thick Summoner Jelly, and Ancient Catalyst have been reduced. 
     - Ancient Catalyst duration increased to 5 quests (up from 4), to justify its higher cost relative to normal Catalyst.
     - > Since these fertilizers have lost their main advantage of allowing hunters to stack fertilzers faster between quests, they are now positioned as slightly more efficient versions of the basic fertilizers.
+- Elder Melder:
+  - Seasonal event tickets can be melded from 2 similar event tickets (down from 3).
+  - Melding recipes for Whetfish Fin and Whetfish Fin + have been added. The plus variant is unlocked in MR.
 
 #### 【 Combat Changes 】 ####
 - Airborne Launches:

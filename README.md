@@ -223,6 +223,8 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
   - Element Conversion rate for normal weapons increased to 8% (up from 5%).
   - Element Conversion rate for Bowguns increased to 8% (up from 2%).
   > The above changes allow the Alatreon set to perform closer to other element oriented sets.
+- Master's Touch (Set Bonus):
+  - Changed from triggering on critical hits to triggering on hitting weak spots.
 
 ### ──────────【 Equipment 】────────── ###
 
@@ -370,4 +372,7 @@ Many of the following changes are targeted at one of the following goals:
 #### 【 Combo Continuation 】 ####
 The following combo continuation is intoduced and is inteded to be a possible continuation of the above listed addition of the Power Charge Dash.
 - Spinning Bludgeon into Spinning Strong Upswing can now combo into Big Bang IV
-- The Dash has 30 seconds of Hyperarmor (Frame 10 to Frame 40)
+- By Releasing R without Directional Input it combos into [Half] Brutal Big Bang
+- By Releasing R with Directional Input it combos into Spinning Bludgeon
+- By Holding R through it, it leads back into Charging.
+- The Dash has 30 frames of Hyperarmor (Frame 10 to Frame 40)

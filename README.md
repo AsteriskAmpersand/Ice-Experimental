@@ -8,8 +8,9 @@ Iceborne Community Edition is a holistic rework of MHW: Iceborne. We attempt to 
 
 # Table of Contents #
 
-- [Installation Guide](#installation-guide)
-- [Save File System](#save-file-system)
+- [ICE Manager](#ice-manager)
+- [Legacy - Installation Guide](#installation-guide)
+- [Legacy - Save File System](#save-file-system)
 - [Known Issues](#known-issues)
 - [Change Log](#change-log)
   - [General Changes](#general-changes)
@@ -18,7 +19,24 @@ Iceborne Community Edition is a holistic rework of MHW: Iceborne. We attempt to 
 
 - - - -
 
+# ICE Manager #
+As of the latest release. ICE now has a version manager. It can be found here: <https://github.com/AsteriskAmpersand/Ice-Experimental/releases>.
+
+The ICE Manager simplifies the ICE install and update process. As well as transferring save files and mods on your first install.
+
+![](https://cdn.discordapp.com/attachments/920464605367644200/985342975871680602/unknown.png)
+
+- You can first pick whichever version of ICE you prefer (the manager allows switching versions with one click). 
+- You can transfer your base game save file and mods to ICE (mods may not all be compatible, the game will tell you of this when first booting up). 
+- You can also update from now on, simply by clicking the "Update" button.
+- You can Disable and Enable ICE with a single click as well
+- You can fully uninstall ICE if you so desire.
+
+
+
 # Installation Guide #
+
+This instructions are no longer necessary, simply grabbing the [ICE Manager](#ice-manager) should be all that you need to install ICE.
 
 ## First Time Installation ##
 Follow these steps if you've never installed ICE before:
@@ -68,6 +86,8 @@ If you were trying ICE before we switched to GitHub downloads, follow these one-
 - - - -
 
 # Save File System #
+This instructions are no longer necessary, simply grabbing the [ICE Manager](#ice-manager) should be all that you need to transfer your save file. First install ICE through the manager (on your preferred version), and then simply click Transfer Save.
+
 ICE manages your character data in a separate save file named "SAVEDATA_ICE". The game normally uses the file named "SAVEDATA1000". These are both located in the standard save folder found at: `...\Steam\userdata\<steamId>\582010\remote\`
 
 Because ICE incorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way. This system also allows hunters to quickly switch between ICE and vanilla freely without having to swap out save files. If enabled, ICE will automatically use the "SAVEDATA_ICE" save file. Otherwise, your game will continue to use the "SAVEDATA1000" save file as normal.
@@ -105,9 +125,6 @@ Much of the text found in ICE has not yet been updated to reflect changes made t
 
 ## Photo Data ##
 ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
-
-## Quest: ★1 Learning the Clutch ##
-This quest cannot currently be completed as intended due to the fact that Clagger is removed in ICE. A temporary fix has been put in place to allow the quest to be completed by killing the Pukei Pukei. In the future, we'll address this issue properly by updating the quest to account for Clagger removal, or replace/remake the quest entirely.
 
 - - - -
 
@@ -155,7 +172,7 @@ The Guiding Lands total zone experience cap mechanic has been disabled. Normally
 
 #### 【 Guaranteed Decorations 】 ####
 Certain Decorations are now guaranteed to drop at least once during game progression. These were added for decorations that are particularly game changing and considered mandatory for certain weapons or playstyles.
-<https://cdn.discordapp.com/attachments/879277879987408977/880205529086066748/unknown.png>
+<https://cdn.discordapp.com/attachments/920464605367644200/1001848843232620625/unknown.png>
 
 #### 【 Decoration Drop Rates 】 ####
 Decoration drop rates have been completely reworked and drastically improved.
@@ -327,53 +344,6 @@ Due to element damage output increasing significantly on many weapon types, Alat
 
 
 ## Weapon Changes (Experimental Build) ##
-
-### ──────────【 Sword & Shield 】────────── ###
-
-#### 【 New Parry Option 】 ####
-The following changes are intended to give hunters an additional defensive option that fits the theme of the weapon (parrying with a buckler shield) while increasing variety in gameplay. Hunters that master this new technique will be able to weave counter-attacks against weaker Monster attacks into their existing play.
-- Parry (previously Guard Slash):
-	- Now has a guardpoint starting from 0.10s from the start of the animation, lasting 0.30s.
-	- When hit during the guardpoint, small knockbacks will result in immediately counter-attacking with a Shield Bash. This Shield Bash can combo into Leaping Slash (Triangle) or directly into Perfect Rush (Circle).
-	- Most attacks that previously could combo into Backstep, now can also combo into Parry.
-  - > Hunters will need to recognize and react accordingly to which attacks they can and cannot parry, as many Monster attacks will be too strong for a small shield. In addition, when comboing directly from Shield Bash into Perfect Rush, the Shield Bash will effectively replace the first hit in Perfect Rush I. Skilling for Guard is advised, to maximize the number of attacks that can be parried.
-
-#### 【 Quality of Life Changes 】 ####
-- Backstep (aka Backhop):
-	- When performed after an unsheathed forward roll, hunters can now hold a desired direction and press Circle early to queue a directional Backstep.
-		- > Previously, early inputs would result in comboing into a backwards Backstep and late inputs would result in comboing into other attacks, leaving only a small 0.250s window that was difficult for hunters to consistently hit. With this change, early inputs are no longer an issue.
-	- When performed after starting to guard, the time available to input a Backstep safely has been increased to 0.417s (up from 0.283s).
-		- > This increases the window that hunters have by 50%, which should greatly increase the reliability of using Backstep right after a guard.
-- Slinger Aim vs Slinger Burst Aim Mode Toggle:
-	- The hunter's current selected mode will now still be retained upon sheathing (previously was resetting to Slinger Aim Mode).
-
-#### 【 General Changes 】 ####
-Many of the following changes are targeted at one of the following goals:
-- Increasing the variety of combos and options available to hunters. Less used slashing attacks can now be better combined with existing high damage slashes (Lateral Slash + Return Stroke) to create longer and stronger combos without needing to utilize the weaker Spiral Slash as often. In addition, shield attacks can be comfortably used in place of slashes, allowing hunters to trade only a small amount of damage for added Stun buildup.
-- Reducing the dominance of Perfect Rush. The changes to Perfect Rush's damage help provide shorter combos (Slash combos, Shield combos, Falling Bash) a chance at competing in shorter windows of opportunities, while still maintaining Perfect Rush's advantage of dealing high damage for larger windows. In many situations, it can be better to use other options if the hunter does not have a large enough window to safely perform up to Perfect Rush II.
-
-- Chop:
-	- MV increased to 17 (up from 14).
-- Side Slash:
-	- MV increased to 14 (up from 13).
-- Rising Slash:
-	- MV increased to 15 (up from 14).
-- Short Shield Bash:
-	- MV increased to 15 (up from 6).
-- Shield Attack:
-	- MV increased to 20 (up from 8).
-- Shield Bash:
-	- MV increased to 20 (up from 16).
-- Hard Bash:
-	- MV increased to 36 (up from 31).
-- Perfect Rush I:
-	- MV decreased to 40+40+50 (down from 45+45+60).
-- Perfect Rush II:
-	- MV increased to 60 (up from 55).
-- Clutch Claw Weapon Attack:
-	- Final Hit:
-		- Partbreak Modifier increased to 2.35x (up from 1.00x).
-		- > Compensates for first three hits having a Partbreak Mod of 0.0x.
 
 ### ──────────【 Hammer 】────────── ###
 

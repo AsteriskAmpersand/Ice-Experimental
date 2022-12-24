@@ -327,8 +327,9 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
 ### ──────────【 Bug Fixes 】────────── ###
 
 - DPS Tick Fix: The engine components responsible for specifically handling ticking damage effects have been upgraded to mitigate the negative effects of frame rate on player damage output. In some cases, player damage could be reduced as much as 25% just for not playing at a stable 60fps. Some examples here: <https://bit.ly/MHWEffectsOfFPS>
+- Corrected some attacks that were incorrectly gaining extra hits at lower frame rates.
 - Moonshots Fix: Aim behavior has been adjusted for Bow and Bowgun at short ranges to mitigate the occurrence of projectiles that incorrectly fly straight up (seemingly towards the moon/sky) and completely miss the intended target. This is sometimes refered to as "moonshots" by the community. An example can be seen here around the midpoint of the clip: <https://twitter.com/Irh_umbreon/status/1409001644411408391>
-- Weapon-specific bug fixes will be covered in each weapon's section instead of here.
+- Other weapon-specific bug fixes will be covered in each weapon's section instead of here.
 
 ### ──────────【 Monster Changes 】────────── ###
 
@@ -344,6 +345,79 @@ Due to element damage output increasing significantly on many weapon types, Alat
 
 
 ## Weapon Changes (Experimental Build) ##
+
+### ──────────【 Dual Blades 】────────── ###
+
+#### 【 Demon Mode & Archdemon Mode 】 ####
+Demon Gauge generation and consumption has been reworked in an effort to make the management of Demon vs Archdemon Mode into a more impactful component of Dual Blades gameplay. These changes should provide hunters more options for combos as they flow back and forth between the two modes. Demon Mode will continue to be the primary method of dealing high damage at the cost of stamina, while Archdemon Mode will offer supplemental damage while stamina regenerates.
+
+- Demon Mode:
+	- Stamina consumption increased to 10/s (up from 5/s).
+	- Demon Gauge generation has been reduced overall.
+		- Most attacks generate 2.5% per hit (same as the original baseline for most attacks).
+		- Heavier hitting attacks generate 5.0% per hit (down from as high as 20% per hit).
+		- > This mainly addresses specific moves that were disproportionately generating far more Demon Gauge than other moves, and trivializing gauge generation.
+	- Automatically de-activates if the hunter receives a hit.
+	- Turning Demon Mode Off:
+		- When performed after an attack, now has an active hitbox with the following stats:
+			- 8+8 MV
+			- 0.6x+0.6x Element and Status Modifier
+		- Can be performed sooner after Blade Dance.
+		- > These changes allow Demon Mode attacks to flow directly into Archdemon Mode attacks.
+
+- Archdemon Mode:
+	- Enables the use of Demon Mode Dashes.
+		- Each dash will consume 5% Demon Gauge while not in Demon Mode.
+		- > Known Issue: These dashes do not have a proper animation for handling weapon grip style (standard vs reverse). This will be fixed in a future update.
+	- Rising Slash uses Demon Mode versions with higher MV.
+	- Left/Right Roundslash:
+		- Consumes 5% Demon Gauge while not in Demon Mode.
+		- Damage greatly enhanced (see General Changes section).
+	- Demon Flurry:
+		- MV increased to 12+12+9+9+9+22+22 (up from 9+9+7+7+3+17+17).
+		- Element and Status Modifier increased to 0.8x+0.8x+0.6x+0.6x+0.6x+1.5x+1.5x (up from 0.8x+0.8x+0.8x+1.0x+1.0x+1.0x).
+		- Now combos into Demon Flurry Rush.
+		- > This buff properly sets up Demon Flurry as a strong attack worth spending Demon Gauge on during Archdemon Mode, without overshadowing Demon Mode.
+
+#### 【 Status Buildup Modifiers 】 ####
+Each attack's Status Modifier has been increased to match their Element Modifier. To understand the reasoning for this change, it is best to cover the history of these modifiers.
+- During MHW, Dual Blades had a 1.0x modifier for both Element and Status on every attack. This was generally the case for most weapons, and still is even in Iceborne.
+- With the launch of Iceborne (v10.10), Capcom was concerned about the power level of element-based builds, and some weapons received overly massive nerfs to their Element and Status Modifiers. For Dual Blades, they nerfed both modifiers by 20% to 60% depending on the attack (with Status being nerfed either the same or slightly more than Element).
+- With the Stygian/Safi Update (v12.01), Capcom partially reverted the nerfs. Depending on the attack, some Element Modifiers nerfs were fully reverted or were reduced to only 40% compared to MHW. Some Status Modifiers were very slightly increased, but the majority were untouched.
+
+While Iceborne did receive some significant increases in element-based build power (examples include additional Element Up skill levels, buffs to Critical Element multipliers, massive element multiplier on Purple Sharpness), the same cannot be said of status-based builds. As such, it is likely Capcom simply overlooked these Status Modifiers when they decided to go back and partially revert the Element Modifier nerfs.
+
+#### 【 General Changes 】 ####
+Most following changes are targeted at increasing the variety of combos and options available to hunters:
+
+- Dual Blade Sharpness Usage:
+	- Sharpness now consumed on every 4th hit (was every 3rd hit).
+	- > Sharpness usage was a little too high relative to other weapons.
+- Left/Right Fade Slash:
+	- MV increased to 11+11 (up from 7).
+	- Element and Status Modifier increased to 0.75x+0.75x (was 0.8x).
+	- > This move found very little use in vanilla with such low damage and minor repositioning value. With this change, both Fade Slashes can be used to situationally loop and extend the Demon Slash combo, during windows of opportunity that are too short for stronger/longer follow-up attacks.
+- Rising Slash (Demon Mode):
+	- MV increased to 12 (up from 9).
+	- > Rising Slash bridges many different moves, but was too heavily dragging down the efficacy of any combo that included it.
+- Left/Right Roundslash:
+	- MV increased to 19+11+7 (up from 15+7+5).
+	- Element and Status Modifier increased to 0.8x+0.8x+0.8x (up from 0.6x+0.6x+0.6x).
+	- > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
+- Left/Right Double Roundslash:
+	- MV increased to 27+15+12 (up from 19+11+7).
+	- > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
+- Special Claw Attack:
+	- Claw Attack:
+		- Can be performed after Left/Right Roundslash.
+		- Can be performed after Blade Dance.
+		- Can be performed after Demon Flurry.
+		- > Known Issue: Evade Shot cannot be performed after Blade Dance or Demon Flurry. This will be corrected in a future update.
+	- Spinning Rising Slash:
+		- MV increased to 25+25+25+25 (up from 23+23+23+23).
+		- Element and Status Modifier increased to 1.5x+1.5x+1.5x+1.5x (up from 1.0x+1.0x+1.0x+1.0x).
+	- > These changes allow Spinning Rising Slash to be used as a combo finisher, and makes up for losing its original purpose as a way to extend Monster clagger (which no longer exists in ICE).
+
 
 ### ──────────【 Hammer 】────────── ###
 

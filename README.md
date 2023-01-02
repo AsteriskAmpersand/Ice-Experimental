@@ -357,7 +357,7 @@ Demon Gauge generation and consumption has been reworked in an effort to make th
 		- Most attacks generate 2.5% per hit (same as the original baseline for most attacks).
 		- Heavier hitting attacks generate 5.0% per hit (down from as high as 20% per hit).
 		- > This mainly addresses specific moves that were disproportionately generating far more Demon Gauge than other moves, and trivializing gauge generation.
-	- Automatically de-activates if the hunter receives a hit.
+	- Automatically de-activates if the hunter is sent flying by an attack.
 	- Turning Demon Mode Off:
 		- When performed after an attack, now has an active hitbox with the following stats:
 			- 8+8 MV
@@ -390,9 +390,6 @@ While Iceborne did receive some significant increases in element-based build pow
 #### 【 General Changes 】 ####
 Most following changes are targeted at increasing the variety of combos and options available to hunters:
 
-- Dual Blade Sharpness Usage:
-	- Sharpness now consumed on every 4th hit (was every 3rd hit).
-	- > Sharpness usage was a little too high relative to other weapons.
 - Left/Right Fade Slash:
 	- MV increased to 11+11 (up from 7).
 	- Element and Status Modifier increased to 0.75x+0.75x (was 0.8x).
@@ -409,14 +406,14 @@ Most following changes are targeted at increasing the variety of combos and opti
 	- > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
 - Special Claw Attack:
 	- Claw Attack:
-		- Can be performed after Left/Right Roundslash.
-		- Can be performed after Blade Dance.
-		- Can be performed after Demon Flurry.
-		- > Known Issue: Evade Shot cannot be performed after Blade Dance or Demon Flurry. This will be corrected in a future update.
+		- Can be performed outside of Demon Mode, if Archdemon Mode is active. Consumes 20% Demon Gauge if used in this way.
+		- Can be performed after Left/Right Roundslash (L2 on PS, LT on XB).
+		- Can be performed after Blade Dance (L2 on PS, LT on XB).
+		- Can be performed after Demon Flurry (L2 on PS, LT on XB).
+		- > Using a directional input in addition to the input indicated above, will instead result in performing an Evade Shot.
 	- Spinning Rising Slash:
-		- MV increased to 25+25+25+25 (up from 23+23+23+23).
-		- Element and Status Modifier increased to 1.5x+1.5x+1.5x+1.5x (up from 1.0x+1.0x+1.0x+1.0x).
-	- > These changes allow Spinning Rising Slash to be used as a combo finisher, and makes up for losing its original purpose as a way to extend Monster clagger (which no longer exists in ICE).
+		- Element and Status Modifier increased to 1.25x+1.25x+1.25x+1.25x (up from 1.0x+1.0x+1.0x+1.0x).
+	- > These changes allow Spinning Rising Slash to be used as a combo finisher, and makes up for the loss of Monster Clagger in ICE.
 
 
 ### ──────────【 Hammer 】────────── ###

@@ -2,7 +2,19 @@
 
 Welcome to the download page for Iceborne Community Edition. Join us at https://discord.gg/xPDVbhZgFJ to follow the development of this mod!
 
-Iceborne Community Edition is a holistic rework of MHW: Iceborne. We attempt to address multiple major gripes a significant section of the playerbase had with an otherwise great game. The goal of ICE is to preserve the spirit of the game's core design, but improve on its limitations and flaws to provide a more enjoyable experience that can still be recognized as Monster Hunter gameplay.
+Iceborne Community Edition (ICE) is an overhaul mod for MHW: Iceborne, driven by community feedback and suggestions. ICE preserves the spirit of the game's core design and direction, but offers improvements to the game in an effort to provide a more balanced and diverse experience for all hunters.
+
+This mod is a work-in-progress, and still in developement. 
+
+ICE is compatible with online play. ICE hunters are matched exclusively with other ICE hunters to prevent negatively affecting vanilla hunters.
+
+Features:
+- Smoother Progression: Play through at your own pace, without being held back by cutscenes or unreasonable grinds.
+- Quality-of-Life Additions: Spend more time enjoying each hunt, and less time in menus or stuck in base.
+- Clutch Claw Rework: Let the Clutch Claw take a backseat, as you re-experience the fast-paced combat of MHW as it was originally intended. 
+- Weapon Moveset Reworks: Master the 14 weapon types in new ways, with increased depth and variety in optimal combos for hunters.
+- Skill Reworks: Make more impactful choices when it comes to skill loadouts. More variety, more active skills, less passives.
+- Bug Fixes: Play the game with less pesky bugs to hold you back.
 
 - - - -
 

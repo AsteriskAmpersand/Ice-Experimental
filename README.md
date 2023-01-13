@@ -298,8 +298,10 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
 
 #### 【 User Interface Changes 】 ####
 - Equipment UIs now show true Attack (aka Raw) and true Element values for weapons.
-  - > This removes the useless bloat multipliers that aren't actually used by the game for any calculations.
-- Chat channel no longer changes during certain actions (joining party/session/etc).
+  - > This removes the useless bloat multipliers that were artificially inflating numbers in UIs, but weren't actually being used by the game for any calculations.
+- Chat UI:
+  - Maximum message length increased to 60 (up from 40).
+  - The selected chat channel no longer changes during certain actions (joining party/session/etc).
 - Quantity selection UIs now support two new behaviors when increment/decrementing by 1:
   - Decrementing below 1 will now loop around to the maximum possible quantity.
   - Incrementing above the maximum possible quantity will now loop around to 1.
@@ -308,8 +310,11 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
 #### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
   - > This was done to help avoid situations where a hunter has to choose between interrupting their epic fight or forfeiting their rightfully earned loot. This wasn't a very interesting decision, in our opinion.
-- Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help shorten the time required to complete main story quests across all ranks.
+- Cutscenes:
+  - A cutscene skip option has been enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this QoL improvement should help shorten the time required to complete main story quests across all ranks.
   - > This is still a work-in-progress feature. Some cutscene audio might not skip correctly due to not being defined by the game as cutscene audio.
+- Quest End Timer:
+  - The timer for returning to base can now be skipped by holding the "Cancel Animation" input for 2 seconds ("Options" on PS, "Menu" on XB, X on PC).
 - Astera Lift System:
   - Hunters can now utilize the lift system from the entrance of Astera, where they generally arrive after quests or expeditions (in front of the Resource Center).
   - When traveling to the "Tradeyard" using the lift system, the hunter will now arrive in the center of the Tradeyard.
@@ -327,6 +332,8 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
   - Melding recipes for Whetfish Fin and Whetfish Fin + have been added. The plus variant is unlocked in MR.
 
 #### 【 Combat Changes 】 ####
+- Mantle Expiration:
+  - When a mantle expires, it will now automatically be unequipped without any interaction from the hunter.
 - Airborne Launches:
   - Hunters can now protect themselves from being launched airborne by other hunters, using any of the available options that would protect against being knocked onto their butts. For example, Flinch Free Lv2 will reduce the launch to a trip, and Flinch Free Lv3 will negate the launch entirely.
   - Monster attacks are unaffected by this change.

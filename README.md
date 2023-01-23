@@ -204,11 +204,7 @@ Smithy costs for the following have been adjusted to better balance material usa
 - Augments for Rarity 6 weapons changed to use 1x Streamstone instead of 1x Warrior's Streamstone.
 - Augments for Rarity 7 weapons changed to use 1x Warrior's Streamstone (down from 2x Warrior's Streamstones).
 
-The following new melding recipes have been added at the Elder Melder, to give hunters more control over their experience around farming High Rank augments:
-- All 7 types of Warrior's Streamstones can be melded from 2 Warrior's Streamstones of any type.
-- All 7 types of Hero's Streamstones can be melded from 2 Hero's Streamstones of any type.
-- 2 Warrior's Streamstones can be melded from a single Hero's Streamstone of the same type.
-- Hero's Streamstones can be melded from 4 Warrior's Streamstones of the same type.
+New melding recipes have been added at the Elder Melder to allow hunters to trade Warrior's and Hero's Streamstones. See details for Elder Melder under [Quality of Life](https://github.com/AsteriskAmpersand/Ice-Stable#-quality-of-life-) for more details.
 
 ### ──────────【 Skills 】────────── ###
 While a more comprehensive rework and rebalancing of skills is planned for ICE in the future, some skills have been tweaked in the mean time with the an emphasis on increasing the variety of competitive options for hunters. This is mainly accomplished by:
@@ -323,7 +319,17 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
     - > Since these fertilizers have lost their main advantage of allowing hunters to stack fertilzers faster between quests, they are now positioned as slightly more efficient versions of the basic fertilizers.
 - Elder Melder:
   - Seasonal event tickets can be melded from 2 similar event tickets (down from 3).
-  - Melding recipes for Whetfish Fin and Whetfish Fin+ have been added. The plus variant is unlocked in MR.
+  - Whetfish Fin and Whetfish Fin+ can be melded. The plus variant is unlocked in MR.
+  - High Rank augment materials:
+    - Any of the 7 types of Warrior's Streamstones can be melded from 2 Warrior's Streamstones of any other type.
+    - Any of the 7 types of Hero's Streamstones can be melded from 2 Hero's Streamstones of any other type.
+    - 2 Warrior's Streamstones can be melded from a single Hero's Streamstone of the same type.
+    - Hero's Streamstones can be melded from 4 Warrior's Streamstones of the same type.
+  - Guiding Lands materials:
+    - Elder Dragonvein Bone can be melded from Elder Spiritvein Bone.
+    - Dragonvein Solid Bone can be melded from Spiritvein Solidbone.
+    - Heavy Dragonvein Bone can be melded from Spiritvein Slogbone.
+    - > These options were added to allow hunters to directly downgrade tempered bones into non-tempered variants, similar to other Guiding Lands materials.
 
 #### 【 Combat Changes 】 ####
 - Mantle Expiration:
@@ -447,3 +453,22 @@ The following combo continuation is intoduced and is inteded to be a possible co
 - By Releasing R with Directional Input it combos into Spinning Bludgeon
 - By Holding R through it, it leads back into Charging.
 - The Dash has 30 frames of Hyperarmor (Frame 10 to Frame 40)
+
+
+### ──────────【 Bow 】────────── ###
+
+#### 【 Dragon Piercer 】 ####
+
+Dragon Piercer has received a minor rework in an effort to increase its effectiveness across all matchups. It will be easier and safer to use throughout a hunt due to having a shorter animation, while providing damage on a wider range of Monsters that is comparable to other Bow attacks.
+
+- Dragon Piercer:
+  - Start up time reduced by approximately 33%.
+  - Recovery animation for all levels changed to use the significantly shorter Level 1 version.
+  - Delay between ticks decreased to 0.033s at all levels (down from 0.067s/0.067s/0.050s/0.050s).
+  - MV decreased to 11/14/17/20 (up from 19/20/23/24).
+  - Element Modifier increased to 0.3x/0.45x/0.6x/0.7x (up from 0.15x/0.2x/0.3x/0.3x).
+  - Status Modifier increased to 0.4x/0.5x/0.6x/0.7x (up from 0.2x/0.25x/0.3x/0.3x).
+  - Fixed Damage removed (was 1/1/2/2).
+  - Damage and Buildup decreased to 4% after 18th hit (was 20%).
+
+

@@ -64,8 +64,9 @@ Follow these steps if you've never installed ICE before:
 ## Updating Or Re-installing ICE ##
 Follow these steps if you want to grab the latest version of ICE:
 1. Click on the green "Code" button and then "Download ZIP".
-2. Extract the contents of the ZIP directly to your root Monster Hunter World install folder (where MonsterHunterWorld.exe is located).
-3. When asked about file conflicts, overwrite any existing files.
+2. Extract the contents of the ZIP file to a temporary location (Desktop, Downloads, etc).
+3. Copy all the contents within the "ice-stable-main" (or "ice-experimental-main") folder directly to your root Monster Hunter World install folder (default path is `...\Steam\steamapps\common\Monster Hunter World\`. You have the right folder if "MonsterHunterWorld.exe" exists in that folder).
+4. When asked about file conflicts, overwrite any existing files.
 
 ## Turning ICE ON / OFF ##
 ICE supports easy on/off in case you want to switch back and forth between mods.
@@ -214,7 +215,7 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 
 #### 【 General Changes 】 ####
 - Coalescence:
-  - Attack bonus changed to 12/18/24 (up from 12/15/18).
+  - Attack bonus changed to 6/12/18 (was 12/15/18).
 - Flinch Free:
   - "Brace Jewel 3" decoration size decreased to Lv1 (from Lv3).
   - Now affects airborne launches from other hunters. Lv2 will reduce the effect to a normal trip. Lv3 will negate the launches entirely. (See "Airborne Launches" under "Quality of Life" section for more details)
@@ -455,6 +456,14 @@ The following combo continuation is intoduced and is inteded to be a possible co
 - The Dash has 30 frames of Hyperarmor (Frame 10 to Frame 40)
 
 
+### ──────────【 Gunlance 】────────── ###
+
+#### 【 Wyrmstake Reload Testing 】 ####
+The following changes are additional changes that override Stable changes:
+- Quick Reload no longer restores Wyrmstake Ammo.
+- Reload is accessible again, but only after Backhop / Backstep.
+
+
 ### ──────────【 Bow 】────────── ###
 
 #### 【 Dragon Piercer 】 ####
@@ -465,7 +474,7 @@ Dragon Piercer has received a minor rework in an effort to increase its effectiv
   - Start up time reduced by approximately 33%.
   - Recovery animation for all levels changed to use the significantly shorter Level 1 version.
   - Delay between ticks decreased to 0.033s at all levels (down from 0.067s/0.067s/0.050s/0.050s).
-  - MV decreased to 11/14/17/20 (up from 19/20/23/24).
+  - MV decreased to 11/14/17/20 (down from 19/20/23/24).
   - Element Modifier increased to 0.3x/0.45x/0.6x/0.7x (up from 0.15x/0.2x/0.3x/0.3x).
   - Status Modifier increased to 0.4x/0.5x/0.6x/0.7x (up from 0.2x/0.25x/0.3x/0.3x).
   - Fixed Damage removed (was 1/1/2/2).

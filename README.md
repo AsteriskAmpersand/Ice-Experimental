@@ -462,6 +462,19 @@ The following combo continuation is intoduced and is inteded to be a possible co
 The following changes are additional changes that override Stable changes:
 - Quick Reload no longer restores Wyrmstake Ammo.
 - Reload is accessible again, but only after Backhop / Backstep.
+- Burst Fire:
+  - Fixed Damage multiplier decreased to 0.7x (down from 0.9x).
+- Wyrmstake Cannon:
+  - Thrust:
+    - Partbreak Modifier decreased to 0.0x+0.0x (down from 1.0x+1.0x).
+    - > Avoids situations where flinch/trips on the first two hits cause the rest of the attack to miss.
+  - Repeated Hits:
+    - MV changed to 8/9/10/12/13/14/16/17/18 (was 6/8/11/14/17/20/23).
+    - Element and Status Modifiers increased to 0.3x (up from 0.0x).
+    - Partbreak Modifier increased to 1.0x (up from 0.3x).
+  - Final Explosion:
+    - Fixed Damage changed to 16/19/22/28/32/36/44/50/56 (was 31/36/41/46/55/61/67).
+    - Fire Damage changed 8/9/10/11/12/13/14/15/16 (was 12/15/18/21/24/27/30).
 
 
 ### ──────────【 Bow 】────────── ###

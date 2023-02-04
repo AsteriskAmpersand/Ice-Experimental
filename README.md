@@ -382,8 +382,9 @@ Demon Gauge generation and consumption has been reworked in an effort to make th
 - Demon Mode:
 	- Stamina consumption increased to 10/s (up from 5/s).
 	- Demon Gauge generation has been reduced overall.
-		- Most attacks generate 2.75% per hit (up from 2.5% for most attacks).
-		- Heavier hitting attacks generate 5.5% per hit (up from 5% for some attacks, down from as high as 20% per hit for others).
+		- Most attacks generate 2.75% per hit (up from 2.5%).
+		- Heavier hitting attacks generate 5.5% per hit (up from 5%).
+    - The last two hits of Sixfold Demon Slash generate 8.25% (down from 20% per hit).
 		- > This mainly addresses specific moves that were disproportionately generating far more Demon Gauge than other moves, and trivializing gauge generation.
 	- Automatically de-activates if the hunter is sent flying by an attack.
 	- Turning Demon Mode Off:

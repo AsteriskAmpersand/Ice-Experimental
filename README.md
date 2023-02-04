@@ -382,8 +382,8 @@ Demon Gauge generation and consumption has been reworked in an effort to make th
 - Demon Mode:
 	- Stamina consumption increased to 10/s (up from 5/s).
 	- Demon Gauge generation has been reduced overall.
-		- Most attacks generate 2.5% per hit (same as the original baseline for most attacks).
-		- Heavier hitting attacks generate 5.0% per hit (down from as high as 20% per hit).
+		- Most attacks generate 2.75% per hit (up from 2.5% for most attacks).
+		- Heavier hitting attacks generate 5.5% per hit (up from 5% for some attacks, down from as high as 20% per hit for others).
 		- > This mainly addresses specific moves that were disproportionately generating far more Demon Gauge than other moves, and trivializing gauge generation.
 	- Automatically de-activates if the hunter is sent flying by an attack.
 	- Turning Demon Mode Off:
@@ -397,10 +397,21 @@ Demon Gauge generation and consumption has been reworked in an effort to make th
 	- Enables the use of Demon Mode Dashes.
 		- Each dash will consume 5% Demon Gauge while not in Demon Mode.
 		- > Known Issue: These dashes do not have a proper animation for handling weapon grip style (standard vs reverse). This will be fixed in a future update.
-	- Rising Slash uses Demon Mode versions with higher MV.
+	- Rising Slash:
+    - Uses Demon Mode versions with higher damage stats and faster animation.
+    - Attack Speed increased by 20% increased by 20% while Archdemon Mode is active.
+  - Double Slash:
+    - Attack Speed increased by 20% while Archdemon Mode is active.
+    - Damage has been enhanced (see General Changes section).
+  - Double Slash Return Stroke:
+    - Attack Speed increased by 20% while Archdemon Mode is active.
+    - Damage has been enhanced (see General Changes section).
+  - Circle Slash: 
+    - Attack Speed increased by 20% while Archdemon Mode is active.
+    - Damage has been enhanced (see General Changes section).
 	- Left/Right Roundslash:
 		- Consumes 5% Demon Gauge while not in Demon Mode.
-		- Damage greatly enhanced (see General Changes section).
+		- Damage has been enhanced (see General Changes section).
 	- Demon Flurry:
 		- MV increased to 12+12+9+9+9+22+22 (up from 9+9+7+7+3+17+17).
 		- Element and Status Modifier increased to 0.8x+0.8x+0.6x+0.6x+0.6x+1.5x+1.5x (up from 0.8x+0.8x+0.8x+1.0x+1.0x+1.0x).
@@ -418,11 +429,20 @@ While Iceborne did receive some significant increases in element-based build pow
 #### 【 General Changes 】 ####
 Most following changes are targeted at increasing the variety of combos and options available to hunters:
 
+- Double Slash:
+  - MV increased to 9+12 (up from 8+10).
+  - Element and Status Modifier increased to 0.7x (up from 0.6x).
+- Double Slash Return Stroke:
+  - MV increased to 12+15 (up from 9+10).
+  - Element and Status Modifier increased to 0.9x (up from 0.6x).
+- Circle Slash:
+  - MV increased to 12+15+15 (up from 9+11+11).
+  - Element and Status Modifier increased to 0.9x (up from 0.7x).
 - Left/Right Fade Slash:
 	- MV increased to 11+11 (up from 7).
 	- Element and Status Modifier increased to 0.75x+0.75x (was 0.8x).
 	- > This move found very little use in vanilla with such low damage and minor repositioning value. With this change, both Fade Slashes can be used to situationally loop and extend the Demon Slash combo, during windows of opportunity that are too short for stronger/longer follow-up attacks.
-- Rising Slash (Demon Mode):
+- Rising Slash:
 	- MV increased to 12 (up from 9).
 	- > Rising Slash bridges many different moves, but was too heavily dragging down the efficacy of any combo that included it.
 - Left/Right Roundslash:

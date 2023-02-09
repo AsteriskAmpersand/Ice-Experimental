@@ -148,30 +148,62 @@ ICE currently does not isolate photo/image data. As such, if you do use the in-g
 ### ──────────【 Multiplayer / Matchmaking 】────────── ###
 While ICE is installed and enabled, hunters will only be matched with other ICE hunters. This is true when using matchmaking to find sessions or when creating/joining SOS. This is done for compatibility reasons and also out of courtesy to non-ICE hunters, so that non-ICE lobbies are not negatively impacted by any changes or differences in gameplay. Unlike other gameplay altering mods, hunters can freely play online with ICE.
 
-### ──────────【 Monster Hitzones / Softening 】────────── ###
-The dominance of the Clutch Claw has been drastically reduced to bring back the original combat pacing from base World. The goal is for softening to be a competitive option, but not a requirement.
+### ──────────【 Clutch Claw Rework 】────────── ###
+The dominance of the Clutch Claw has been drastically reduced to bring back the original combat pacing from base World. The goal is for softening to be a strong optional tool for the Hunter to use as desired, rather than a required component in general play.
 - Softening effect on monster HZV has been reduced to `HZV+5` (down from `0.75*HZV + 25`).
 - Monster "Clagger" behavior has been removed. Instead monsters will flinch, trip, and topple like they used to, before Iceborne.
-
-Since Capcom reduced Monster hitzone values (HZV) to accommodate the powerful effects of softening, Monster hitzone values have been rebalanced in ICE to compensate for the Clutch Claw nerfs above. 
-Details can be found here: https://docs.google.com/spreadsheets/d/1nzN2zYD1VbeEuKGlrYPRDZPHjfyy0y-SawwSEaTZ8OQ/edit?usp=sharing
-
-AT Velkhana's unique HZV mechanic has also been slightly modified to account for these changes:
-- Shot HZV Multipliers increased to 1.1/1.0/0.9 (up from 1.0/0.8/0.6)
-These multipliers ensure that the head hitzone still counts towards WEX zones for gunners under the following conditions:
-- Any time during aura Lv1
-- Any time during aura Lv2
-- Tenderized or broken head during aura Lv3
-These values follow the assumed original developer intent, as they are below tenderized values in the vanilla tenderization formula and below melee multipliers values.
-
-### ──────────【 Player 】────────── ###
-- Attack cap increased to 3.0x (up from 2.0x). This reverts a nerf from IB.
-- Element cap increased to 3.0x/+30 (up from 1.6x/+15).
-- Status cap increased to 3.0x (up from 1.6x)
 - Clutch Claw weapon attacks:
   - All weapons can now soften with a single use, as if they are heavy weapons.
   - Most weapons can now generate slinger ammo, as if they are light weapons.
   - Clutch Claw Boost skill (Shaver Decoration) no longer has any effect for now.
+
+### ──────────【 Monster Hitzones 】────────── ###
+Since Capcom balanced Monster hitzone values (HZV) in Master Rank to accommodate the powerful effects of softening, some Monster hitzone values have been rebalanced with the following general goals:
+- Compensate for the Clutch Claw nerfs as necessary.
+- Ensure all hunter weapons have primary weakzones to aim for, without the need for softening.
+- Ensure that secondary weakzones that previously required softening, are either always weakzones or can still become weakzones.
+
+Full details for individual monsters can be found here: https://docs.google.com/spreadsheets/d/1nzN2zYD1VbeEuKGlrYPRDZPHjfyy0y-SawwSEaTZ8OQ/edit?usp=sharing
+
+In addition, the following monsters received changes that are worth calling out specifically.
+
+- Alatreon:
+  - Head & Neck: Shot HZV increased to 50 (up from 30).
+  - Body: Shot HZV decreased to 30 (down from 45).
+  - Arms: Shot HZV increased to 40 (up from 20).
+- Behemoth:
+  - Head: Blunt HZV increased to 65 (up from 55).
+  - Arms: Blunt HZV increased to 45 (up from 40).
+- Lavasioth:
+  - "Broken" HZVs for Head, Body, Legs, and Tail increased to match "Heated" HZVs.
+  - Various HZVs raised to prevent bouncing with White or Purple sharpness.
+- Lunastra:
+  - Head: Sever HZV increased to 45 (up from 40) for both HR and MR.
+  - Body: Sever and Blunt HZV increased to 20 (up from 17) for MR.
+  - Back: Sever and Blunt HZV increased to 20 (up from 17) for MR.    
+  - Hindlegs:
+    - Sever HZV increased to 45 (up from 30) for both HR and MR.
+    - Blunt HZV increased to 40 (up from 25) for both HR and MR.
+    - > This change makes the hindlegs a proper secondary weakzone for Blademasters.
+  - Wings:
+    - Shot HZV increased to 45 (up from 40) for both HR and MR.
+    - > This change makes the wings a proper secondary weakzone for Gunners.
+- Kulve Taroth (MR):
+  - All HZVs changed to match those found in HR.
+- Namielle:
+  - Sever, Blunt, and Shot HZVs increased while in Normal state.
+  - Fire HZVs increased while in Dehydrated state.
+  - > These changes partially reduce the drastic swings in weaknesses across the two states.
+- Uragaan:
+  - Forearms: Sever and Blunt HZV increased to 40 (up from 25 and 30).
+- Velkhana:
+  - Arch-Tempered HZV modifiers:
+    - Shot HZV Multipliers increased to 1.1x/1.0x/0.9x (up from 1.0x/0.8x/0.6x)
+    - These multipliers ensure that the head hitzone still counts towards WEX zones for gunners under the following conditions:
+      - Any time during aura Lv1
+      - Any time during aura Lv2
+      - Tenderized or broken head during aura Lv3
+    - > These values were chosen to follow what we assume to be Capcom's original intent. They are below tenderized values in the vanilla softening formula and below melee multipliers values.
 
 ### ──────────【 Progression 】────────── ###
 
@@ -259,7 +291,7 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 ### ──────────【 Equipment 】────────── ###
 
 #### 【 Element/Status Balancing 】 ####
-Some weapon types have been rebalanced to increase the variety in competitive equipment options for hunters to choose from. The following lists show what the rebalancing goals are for those weapon types. Some weapons will be able to better take advantage of at least the element/status available on their weapon. For these weapons, raw will still be competitive and be the most consistent option when not planning for specific match ups. Other weapons may now be able to run full element builds for certain playstyles.
+Some weapon types have been rebalanced to increase the variety in competitive equipment options for hunters to choose from. Some weapons will be able to better take advantage of at least the element/status available on their weapon, despite optimizing for Attack overall. Other weapons may now be able to run full element builds for certain playstyles or specific matchups.
 
 #### 【 Armor Changes 】 ####
 While a more comprehensive rework and rebalancing of armors is planned for ICE to increase the variety in build options for hunters that have meaningful impact on gameplay (with effects like Frostcraft from Velkhana), some specific sets have been adjusted in the mean time to preserve the limited options the game already did offer.
@@ -271,19 +303,29 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 - Changes to armors will be tracked separately on the Armor Spreadsheet.
 
 #### 【 Weapon Changes 】 ####
-Fatalis Weapons have been normalized (with the exception of LBG) to be 340 Raw, -30% affinity.
+Safi'Jiiva Light Bowguns:
+  - Ammo tables have been updated to match Aquashot, but for each of their respective element types.
+Fatalis Weapons:
+  - Normalized (with the exception of LBG) to 340 Attack, -30% affinity.
+  - > While weapons are normally dealt with on a more specific basis, this is a cross-weapon nerf that was necessary both because of the inconsistencies it generates with weapon progression as well as the aberrant stat values it had in specific outliers.
 
-While weapons are normally dealt with on a more specific basis, this is a cross weapon nerf that was necessary both because of the inconsistencies it generates with weapon progressions as well as the aberrant stat values it had in specific outliers. This is a nerf that is still under evaluation but it will happen in one shape or another.
-
-#### 【 General Changes 】 ####
+#### 【 Augments and Upgrades 】 ####
 - Health Regen augment:
-  - For melee weapons, cooldown between procs decreased to 0.00s (down from 0.2s).
-  - For ranged weapons, cooldown between procs decreased to 0.125s (down from 0.2s).
-  - > The above changes were made to avoid inconsistent healing rates as result of movesets, weapon mechanics, and the engine's inability to correctly handle variable frame rates. Healing on ranged weapons will be virtually unchanged compared to intended rates from vanilla.
+  - Healing Effect:
+    - High Rank effect decreased to 7%/11%/15% (down from 10%/15%/20%)
+    - Master Rank effect changed to 5%/8%/11%/14% (was 7.5%/9%/11%/14%)
+  - Cooldown:
+    - For melee weapons, cooldown between procs decreased to 0.00s (down from 0.2s).
+    - For ranged weapons, cooldown between procs decreased to 0.125s (down from 0.2s).
+    - > The above changes were made to avoid inconsistent healing rates as result of movesets, weapon mechanics, and the engine's inability to correctly handle variable frame rates. Healing on ranged weapons will be virtually unchanged compared to intended rates from vanilla.
 - Awakened Abilities:
-  - Attack V: Attack bonus for GS and Hammer increased to 10 (up from 9), to match other weapons.
-  - Attack VI: Attack bonus for GS and Hammer increased to 15 (up from 14), to match other weapons.
-- Ammo tables for Safi LBGs have been updated to match Aquashot, but for other elements.
+  - Attack V: Attack bonus for Greatsword and Hammer increased to 10 (up from 9), to match other weapons.
+  - Attack VI: Attack bonus for Greatsword and Hammer increased to 15 (up from 14), to match other weapons.
+
+#### 【 Stat Limits 】 ####
+- Attack Limit increased to 3.0x of Base Attack (up from 2.0x). This reverts a nerf from IB.
+- Element Limit increased to 3.0x/+30 of Base Element (up from 1.6x/+15).
+- Status Limit increased to 3.0x of Base Status (up from 1.6x).
 
 ### ──────────【 Quality of Life 】────────── ###
 
@@ -368,103 +410,6 @@ Due to element damage output increasing significantly on many weapon types, Alat
 
 ## Weapon Changes (Experimental Build) ##
 
-### ──────────【 Equipment/Skill Changes 】────────── ###
-
-- Health Regen Augment:
-  - High Rank effect bonus decreased to 7%/11%/15% (down from 10%/15%/20%)
-  - Master Rank effect bonus changed to 5%/8%/11%/14% (was 7.5%/9%/11%/14%)
-
-### ──────────【 Dual Blades 】────────── ###
-
-#### 【 Demon Mode & Archdemon Mode 】 ####
-Demon Gauge generation and consumption has been reworked in an effort to make the management of Demon vs Archdemon Mode into a more impactful component of Dual Blades gameplay. These changes should provide hunters more options for combos as they flow back and forth between the two modes. Demon Mode will continue to be the primary method of dealing high damage at the cost of stamina, while Archdemon Mode will offer supplemental damage while stamina regenerates.
-
-- Demon Mode:
-	- Stamina consumption increased to 10/s (up from 5/s).
-	- Demon Gauge generation has been reduced overall.
-		- Most attacks generate 2.75% per hit (up from 2.5%).
-		- Heavier hitting attacks generate 5.5% per hit (up from 5%).
-    - The last two hits of Sixfold Demon Slash generate 8.25% (down from 20% per hit).
-		- > This mainly addresses specific moves that were disproportionately generating far more Demon Gauge than other moves, and trivializing gauge generation.
-	- Automatically de-activates if the hunter is sent flying by an attack.
-	- Turning Demon Mode Off:
-		- When performed after an attack, now has an active hitbox with the following stats:
-			- 8+8 MV
-			- 0.6x+0.6x Element and Status Modifier
-		- Can be performed sooner after Blade Dance.
-		- > These changes allow Demon Mode attacks to flow directly into Archdemon Mode attacks.
-
-- Archdemon Mode:
-	- Enables the use of Demon Mode Dashes.
-		- Each dash will consume 5% Demon Gauge while not in Demon Mode.
-		- > Known Issue: These dashes do not have a proper animation for handling weapon grip style (standard vs reverse). This will be fixed in a future update.
-	- Rising Slash:
-    - Uses Demon Mode versions with higher damage stats and faster animation.
-    - Attack Speed increased by 20% increased by 20% while Archdemon Mode is active.
-  - Double Slash:
-    - Attack Speed increased by 20% while Archdemon Mode is active.
-    - Damage has been enhanced (see General Changes section).
-  - Double Slash Return Stroke:
-    - Attack Speed increased by 20% while Archdemon Mode is active.
-    - Damage has been enhanced (see General Changes section).
-  - Circle Slash: 
-    - Attack Speed increased by 20% while Archdemon Mode is active.
-    - Damage has been enhanced (see General Changes section).
-	- Left/Right Roundslash:
-		- Consumes 5% Demon Gauge while not in Demon Mode.
-		- Damage has been enhanced (see General Changes section).
-	- Demon Flurry:
-		- MV increased to 12+12+9+9+9+22+22 (up from 9+9+7+7+3+17+17).
-		- Element and Status Modifier increased to 0.8x+0.8x+0.6x+0.6x+0.6x+1.5x+1.5x (up from 0.8x+0.8x+0.8x+1.0x+1.0x+1.0x).
-		- Now combos into Demon Flurry Rush.
-		- > This buff properly sets up Demon Flurry as a strong attack worth spending Demon Gauge on during Archdemon Mode, without overshadowing Demon Mode.
-
-#### 【 Status Buildup Modifiers 】 ####
-Each attack's Status Modifier has been increased to match their Element Modifier. To understand the reasoning for this change, it is best to cover the history of these modifiers.
-- During MHW, Dual Blades had a 1.0x modifier for both Element and Status on every attack. This was generally the case for most weapons, and still is even in Iceborne.
-- With the launch of Iceborne (v10.10), Capcom was concerned about the power level of element-based builds, and some weapons received overly massive nerfs to their Element and Status Modifiers. For Dual Blades, they nerfed both modifiers by 20% to 60% depending on the attack (with Status being nerfed either the same or slightly more than Element).
-- With the Stygian/Safi Update (v12.01), Capcom partially reverted the nerfs. Depending on the attack, some Element Modifiers nerfs were fully reverted or were reduced to only 40% compared to MHW. Some Status Modifiers were very slightly increased, but the majority were untouched.
-
-While Iceborne did receive some significant increases in element-based build power (examples include additional Element Up skill levels, buffs to Critical Element multipliers, massive element multiplier on Purple Sharpness), the same cannot be said of status-based builds. As such, it is likely Capcom simply overlooked these Status Modifiers when they decided to go back and partially revert the Element Modifier nerfs.
-
-#### 【 General Changes 】 ####
-Most following changes are targeted at increasing the variety of combos and options available to hunters:
-
-- Double Slash:
-  - MV increased to 9+12 (up from 8+10).
-  - Element and Status Modifier increased to 0.7x (up from 0.6x).
-- Double Slash Return Stroke:
-  - MV increased to 12+15 (up from 9+10).
-  - Element and Status Modifier increased to 0.9x (up from 0.6x).
-- Circle Slash:
-  - MV increased to 12+15+15 (up from 9+11+11).
-  - Element and Status Modifier increased to 0.9x (up from 0.7x).
-- Left/Right Fade Slash:
-	- MV increased to 11+11 (up from 7).
-	- Element and Status Modifier increased to 0.75x+0.75x (was 0.8x).
-	- > This move found very little use in vanilla with such low damage and minor repositioning value. With this change, both Fade Slashes can be used to situationally loop and extend the Demon Slash combo, during windows of opportunity that are too short for stronger/longer follow-up attacks.
-- Rising Slash:
-	- MV increased to 12 (up from 9).
-	- > Rising Slash bridges many different moves, but was too heavily dragging down the efficacy of any combo that included it.
-- Left/Right Roundslash:
-	- MV increased to 19+11+7 (up from 15+7+5).
-	- Element and Status Modifier increased to 0.8x+0.8x+0.8x (up from 0.6x+0.6x+0.6x).
-	- > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
-- Left/Right Double Roundslash:
-	- MV increased to 27+15+12 (up from 19+11+7).
-	- > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
-- Special Claw Attack:
-	- Claw Attack:
-		- Can be performed outside of Demon Mode, if Archdemon Mode is active. Consumes 20% Demon Gauge if used in this way.
-		- Can be performed after Left/Right Roundslash (L2 on PS, LT on XB).
-		- Can be performed after Blade Dance (L2 on PS, LT on XB).
-		- Can be performed after Demon Flurry (L2 on PS, LT on XB).
-		- > Using a directional input in addition to the input indicated above, will instead result in performing an Evade Shot.
-	- Spinning Rising Slash:
-		- Element and Status Modifier increased to 1.25x+1.25x+1.25x+1.25x (up from 1.0x+1.0x+1.0x+1.0x).
-	- > These changes allow Spinning Rising Slash to be used as a combo finisher, and makes up for the loss of Monster Clagger in ICE.
-
-
 ### ──────────【 Hammer 】────────── ###
 
 #### 【 Power Charge Dash Addition 】 ####
@@ -477,28 +422,6 @@ The following combo continuation is intoduced and is inteded to be a possible co
 - By Releasing R with Directional Input it combos into Spinning Bludgeon
 - By Holding R through it, it leads back into Charging.
 - The Dash has 30 frames of Hyperarmor (Frame 10 to Frame 40)
-
-
-### ──────────【 Gunlance 】────────── ###
-
-#### 【 Wyrmstake Reload Testing 】 ####
-The following changes are additional changes that override Stable changes:
-- Quick Reload no longer restores Wyrmstake Ammo.
-- Reload is accessible again, but only after Backhop / Backstep.
-- Burst Fire:
-  - Fixed Damage multiplier decreased to 0.7x (down from 0.9x).
-- Wyrmstake Cannon:
-  - Thrust:
-    - Partbreak Modifier decreased to 0.0x+0.0x (down from 1.0x+1.0x).
-    - > Avoids situations where flinch/trips on the first two hits cause the rest of the attack to miss.
-  - Repeated Hits:
-    - MV changed to 8/9/10/12/13/14/16/17/18 (was 6/8/11/14/17/20/23).
-    - Element and Status Modifiers increased to 0.3x (up from 0.0x).
-    - Partbreak Modifier increased to 1.0x (up from 0.3x).
-  - Final Explosion:
-    - Fixed Damage changed to 16/19/22/28/32/36/44/50/56 (was 31/36/41/46/55/61/67).
-    - Fire Damage changed 8/9/10/11/12/13/14/15/16 (was 12/15/18/21/24/27/30).
-
 
 ### ──────────【 Bow 】────────── ###
 

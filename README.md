@@ -406,9 +406,30 @@ Due to element damage output increasing significantly on many weapon types, Alat
 - Hunting Horn modifier decreased to 0.8x (down from 1.0x).
 - Gunlance modifier decreased to 1.0x (down from 1.1x).
 
+## Experimental General Changes ##
 
+### UI Responsiveness ###
+The following changes have been made to create a more responsive UI and reduce the amount of waiting time required to perform certain UI actions.
+- Start Menu:
+  - Intro and outro animations sped up.
+  - Automatically skips the intro animation without needing a "Skip Animation" input.
+- Quest Board:
+  - Automatically accelerates the camera zoom effect without needing a "Skip Animation" input.
+  - Quest list loading delay removed.
+- Menu Lists (Item Box, NPC options, etc):
+  - Removed delay between each option fading in.
+- Other UIs:
+  - Intro and outro animations sped up.
+  
+More changes to come in a future update. Feedback is welcome.
 
-## Weapon Changes (Experimental Build) ##
+### Hunter Attack Turning ###
+The following changes were made to increase the responsiveness of turning controls during combos. These changes only affect attacks that already support turning between attacks within a combo.
+- Directional input angle deadzone reduced.
+- Minimum turning angle removed.
+
+## Experimental Weapon Changes ##
+The changes below are in addition to (or overwrite) changes from Stable. See Stable's change log for full weapon details.
 
 ### ──────────【 Hammer 】────────── ###
 

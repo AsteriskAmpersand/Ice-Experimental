@@ -282,6 +282,9 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Critical Status / True Critical Status (Set Bonus Skill):
   - Great Sword multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
   - Hunting Horn multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
+- Dragonvein Awakening / True Dragonvein Awakening (Set Bonus Skill):
+  - Element Limit Override increased to 3.5x/4.0x of Base Element (up from 2.2x/2.55x generally, up from 1.8x/2.35x for Bowguns).
+  - Status Limit Override increased to 3.5x/4.0x of Base Status (up from 1.7x/2.0x).
 - Element Conversion (Set Bonus Skill):
   - Conversion rate increased to 8x for all weapons (up from 5x, or 2x for Bowguns).
   > This change brings the power level of the Alatreon set close to other element-based sets, allowing it to be used as a competitive alternative.
@@ -324,8 +327,11 @@ Fatalis Weapons:
 
 #### 【 Stat Limits 】 ####
 - Attack Limit increased to 3.0x of Base Attack (up from 2.0x). This reverts a nerf from IB.
-- Element Limit increased to 3.0x/+30 of Base Element (up from 1.6x/+15).
+- Element Limit increased to 3.0x/+30 of Base Element (up from 1.6x/+15 generally, up from 1.57x/+15 for Bowguns).
 - Status Limit increased to 3.0x of Base Status (up from 1.6x).
+- Stun Buildup Limit increased to 3.0x of Base Stun Buildup (up from 2.0x).
+- Exhaust Buildup Limit increased to 3.0x of Base Exhaust Buildup (up from 2.0x).
+- Mount Buildup Limit increased to 3.0x of Base Mount Buildup (up from 2.0x).
 
 ### ──────────【 Quality of Life 】────────── ###
 
@@ -339,6 +345,17 @@ Fatalis Weapons:
   - Decrementing below 1 will now loop around to the maximum possible quantity.
   - Incrementing above the maximum possible quantity will now loop around to 1.
   - > These changes allow faster buying, selling, or melding of full stacks of items.
+- Many UIs have been made more responsive to inputs and interactions. Some examples are listed below.
+  - Start Menu:
+    - Intro and outro animations sped up.
+    - Automatically skips the intro animation without needing a "Skip Animation" input.
+  - Quest Board:
+    - Automatically accelerates the camera zoom effect without needing a "Skip Animation" input.
+    - Quest list loading delay removed.
+  - Menu Lists (Item Box, NPC options, etc):
+    - Removed delay between each option fading in.
+  - Other UIs:
+    - Intro and outro animations sped up.
 
 #### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
@@ -408,21 +425,6 @@ Due to element damage output increasing significantly on many weapon types, Alat
 
 ## Experimental General Changes ##
 
-### UI Responsiveness ###
-The following changes have been made to create a more responsive UI and reduce the amount of waiting time required to perform certain UI actions.
-- Start Menu:
-  - Intro and outro animations sped up.
-  - Automatically skips the intro animation without needing a "Skip Animation" input.
-- Quest Board:
-  - Automatically accelerates the camera zoom effect without needing a "Skip Animation" input.
-  - Quest list loading delay removed.
-- Menu Lists (Item Box, NPC options, etc):
-  - Removed delay between each option fading in.
-- Other UIs:
-  - Intro and outro animations sped up.
-  
-More changes to come in a future update. Feedback is welcome.
-
 ### Hunter Attack Turning ###
 The following changes were made to increase the responsiveness of turning controls during combos. These changes only affect attacks that already support turning between attacks within a combo.
 - Directional input angle deadzone reduced.
@@ -430,19 +432,6 @@ The following changes were made to increase the responsiveness of turning contro
 
 ## Experimental Weapon Changes ##
 The changes below are in addition to (or overwrite) changes from Stable. See Stable's change log for full weapon details.
-
-### ──────────【 Hammer 】────────── ###
-
-#### 【 Power Charge Dash Addition 】 ####
-- Power Charge when you are already in Power Charge State instead starts a dash which removes Power Charge State and instead sets the Charge Level to 3. This move is treated as part of a Charge and can combo into any Charge follow-up or continued into a Charge.
-	
-#### 【 Combo Continuation 】 ####
-The following combo continuation is intoduced and is inteded to be a possible continuation of the above listed addition of the Power Charge Dash.
-- Spinning Bludgeon into Spinning Strong Upswing can now combo into Big Bang IV
-- By Releasing R without Directional Input it combos into [Half] Brutal Big Bang
-- By Releasing R with Directional Input it combos into Spinning Bludgeon
-- By Holding R through it, it leads back into Charging.
-- The Dash has 30 frames of Hyperarmor (Frame 10 to Frame 40)
 
 ### ──────────【 Bow 】────────── ###
 

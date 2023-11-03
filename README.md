@@ -356,6 +356,7 @@ Fatalis Weapons:
     - Removed delay between each option fading in.
   - Other UIs:
     - Intro and outro animations sped up.
+- Item Loadout and Equipment Loadout maximum name length increased to 20 (up from 16).
 
 #### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
@@ -429,6 +430,15 @@ Due to element damage output increasing significantly on many weapon types, Alat
 The following changes were made to increase the responsiveness of turning controls during combos. These changes only affect attacks that already support turning between attacks within a combo.
 - Directional input angle deadzone reduced.
 - Minimum turning angle removed.
+
+### Maximum Might ###
+Maximum Might has been temporarily reworked on Experimental to help with testing a new skill conditional to offer a playstyle that utilizes i-frames less frequently. Dodging too frequently (especially in quick succession) will result in the skill having a low-uptime.
+- Provides an Affinity Bonus of 10/20/30/40/50 by level (same as Maximum Might) when active.
+- Uses a new resource ranging from 0.0 to 15.0, which passively regenerates at a rate of 1.0 per second, continuously.
+- Affinity Bonus is active when at or above 10.0 resource.
+- Most evasive actions will cost about 5.0 resource. (Step dodges and LBG slide will cost a reduced amount of about 2.5 resource.)
+- The resource only affects the activation of the Affinity Bonus, and does not prevent Hunters from dodging normally.
+
 
 ## Experimental Weapon Changes ##
 The changes below are in addition to (or overwrite) changes from Stable. See Stable's change log for full weapon details.

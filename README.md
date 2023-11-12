@@ -261,9 +261,10 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Item Prolonger:
   - Increased bonus to 33%/66%/100% (from 10%/25%/50%).
 - Maximum Might:
-  - Level 5 Affinity bonus increased to 50% (up from 40%).
-  - Max Stamina time requirement decreased to 0 seconds (down from 5).
-  - Lingering buff duration changed to only apply at level 4 (2 seconds) and level 5 (3 seconds).
+  - Affinity bonus changed to 10%/20%/30%/40%/50% (from 10%/20%/30%/40%/40%).
+  - Max Stamina time requirement changed to 0/0/0/0/0 (from 5/5/5/5/0).
+  - Lingering buff duration changed to 0/0/0/1/2 (from 2/3/3/4/0).
+  - Lingering buff duration changed to only apply at level 4 (1 second) and level 5 (2 seconds).
 - Non-Elemental Boost:
   - Base Attack bonus increased to 10% (up from 5%).
   - > This reverts a nerf from IB.
@@ -434,11 +435,12 @@ The following changes were made to increase the responsiveness of turning contro
 ### Maximum Might ###
 Maximum Might has been temporarily reworked on Experimental to help with testing a new skill conditional to offer a playstyle that utilizes i-frames less frequently. Dodging too frequently (especially in quick succession) will result in the skill having a low-uptime.
 - Provides an Affinity Bonus of 10/20/30/40/50 by level (same as Maximum Might) when active.
-- Uses a new resource ranging from 0.0 to 15.0, which passively regenerates at a rate of 1.0 per second, continuously.
-- Affinity Bonus is active when at or above 10.0 resource.
-- Most evasive actions will cost about 5.0 resource. (Step dodges and LBG slide will cost a reduced amount of about 2.5 resource.)
-- The resource only affects the activation of the Affinity Bonus, and does not prevent Hunters from dodging normally.
-
+- Uses a new resource ranging from 0.0 to 20.0, which passively regenerates at a rate of 1.0 per second, continuously.
+- Affinity Bonus is active when at or above 15.0 resource.
+- Different evasion actions will consume varying amounts of resource:
+  - Most evasion actions consume 5.0 resource.
+  - Step evades consume 3.75 resource. 
+  - Combo evade actions (ex: Step + Slide/Roll/Step) consume 5.0 resource in total (3.75 for the initial step, 1.25 for the follow-up action).
 
 ## Experimental Weapon Changes ##
 The changes below are in addition to (or overwrite) changes from Stable. See Stable's change log for full weapon details.
